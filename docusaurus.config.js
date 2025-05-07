@@ -1,24 +1,29 @@
 const lightCodeTheme = require('prism-react-renderer').themes.github;
 const darkCodeTheme = require('prism-react-renderer').themes.dracula;
+/*
+ORIGINAL OER TEMPLATE:
 const math = require('remark-math');
 const katex = require('rehype-katex');
-const toc = require('remark-toc');
+const toc = require('remark-toc'); 
+*/
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'OER Course Title',
-  tagline: 'OER Tag/Keyword',
+  title: 'APS145 - Applied Problem Solving',
+  tagline: 'APS145 - Applied Problem Solving',
   url: 'https://seneca-ictoer.github.io/',
-  baseUrl: '/OERTemplate/',
+  baseUrl: '/APS145/',
   trailingSlash: false,
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'seneca-ictoer',
-  projectName: 'OERTemplate',
+  organizationName: 'seneca-SCPA',
+  projectName: 'APS145',
   themeConfig: {
     navbar: {
-      title: 'OER Course Title',
+      title: 'APS145 - Applied Problem Solving',
       logo: {
         alt: 'Seneca Polytechnic',
         src: 'img/logo.svg',
@@ -38,7 +43,7 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'OER Course Title',
+          title: 'APS145 - Applied Problem Solving',
           items: [
             {
               html: `<a href='#' id='pwa-button' class='footer__link-item' hidden>Install as an App</a>`,
@@ -60,9 +65,9 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/',
-          editUrl: 'https://github.com/catherine-leung/OERTemplate/tree/main',
-          remarkPlugins: [math],
-          rehypePlugins: [katex],
+          editUrl: 'https://github.com/Seneca-SCPA/APS145/tree/main',
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
