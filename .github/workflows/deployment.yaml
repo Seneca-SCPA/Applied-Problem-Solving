@@ -51,8 +51,8 @@ jobs:
       - name: Build PDF
         run: npx docusaurus-prince-pdf -u https://seneca-SCPA.github.io/APS145/
 
-      - name: rename
-        run: mv ./pdf/seneca-SCPA.github.io-APS145.pdf ./pdf/APS145.pdf
+#      - name: rename
+#        run: mv ./pdf/seneca-SCPA.github.io-APS145.pdf ./pdf/APS145.pdf
 
       - name: Push pdf
         run: |
