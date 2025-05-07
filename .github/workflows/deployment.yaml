@@ -49,10 +49,10 @@ jobs:
           yes "" | sudo ./install.sh
 
       - name: Build PDF
-        run: npx docusaurus-prince-pdf -u https://seneca-ictoer.github.io/APS145/
+        run: npx docusaurus-prince-pdf -u https://seneca-SCPA.github.io/APS145/
 
       - name: rename
-        run: mv ./pdf/seneca-ictoer.github.io-APS145.pdf ./pdf/APS145.pdf
+        run: mv ./pdf/seneca-SCPA.github.io-APS145.pdf ./pdf/APS145.pdf
 
       - name: Push pdf
         run: |
