@@ -4,8 +4,9 @@ const darkCodeTheme = require('prism-react-renderer').themes.dracula;
 ORIGINAL OER TEMPLATE:
 const math = require('remark-math');
 const katex = require('rehype-katex');
-const toc = require('remark-toc'); 
 */
+const toc = require('remark-toc'); 
+
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 
@@ -13,7 +14,7 @@ import rehypeKatex from 'rehype-katex';
 module.exports = {
   title: 'APS145 - Applied Problem Solving',
   tagline: 'APS145 - Applied Problem Solving',
-  url: 'https://seneca-ictoer.github.io/',
+  url: 'https://seneca-SCPA.github.io/',
   baseUrl: '/APS145/',
   trailingSlash: false,
   onBrokenLinks: 'warn',
