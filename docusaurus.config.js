@@ -5,7 +5,7 @@ ORIGINAL OER TEMPLATE:
 const math = require('remark-math');
 const katex = require('rehype-katex');
 */
-const toc = require('remark-toc'); 
+const toc = require('remark-toc');
 
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
