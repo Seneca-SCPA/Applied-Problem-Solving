@@ -28,4 +28,4 @@ publish.bat
 .idea
 
 # yarn Lock file (Let the Git Actions rebuild as necessary)
-yarn.lock
+#yarn.lock
