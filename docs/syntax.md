@@ -1,7 +1,8 @@
 ---
-id: test-file
-title: Test File
-sidebar_position: 1
+id: syntax
+title: Markdown Syntax Examples
+sidebar_position: 99
+slug: /syntax
 description: TBD
 ---
 
@@ -28,8 +29,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 # Images
 
+[//]: # 'NOTE: Need to add additional ../ if moved inside a sub-category '
+
 Internal:
-![The docusaurus.jpg Image](../../static/img/docusaurus.png)
+![The docusaurus.jpg Image](../static/img/docusaurus.png)
 
 External:
 ![](https://seneca-ictoer.github.io/OERResources/OERTemplate/docusaurus.png)
@@ -71,7 +74,7 @@ Latex in admonition block
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
 
 Internal:
-![The docusaurus.jpg Image](../../static/img/docusaurus.png)
+![The docusaurus.jpg Image](../static/img/docusaurus.png)
 
 External:
 ![](https://seneca-ictoer.github.io/OERResources/OERTemplate/docusaurus.png)
@@ -92,7 +95,7 @@ Latex in admonition block
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
 
 Internal:
-![The docusaurus.jpg Image](../../static/img/docusaurus.png)
+![The docusaurus.jpg Image](../static/img/docusaurus.png)
 
 External:
 ![](https://seneca-ictoer.github.io/OERResources/OERTemplate/docusaurus.png)
@@ -117,7 +120,7 @@ Latex in admonition block
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
 
 Internal:
-![The docusaurus.jpg Image](../../static/img/docusaurus.png)
+![The docusaurus.jpg Image](../static/img/docusaurus.png)
 
 External:
 ![](https://seneca-ictoer.github.io/OERResources/OERTemplate/docusaurus.png)
@@ -143,7 +146,7 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
 
 Internal:
 
-![The docusaurus.jpg Image](../../static/img/docusaurus.png)
+![The docusaurus.jpg Image](../static/img/docusaurus.png)
 
 External:
 
@@ -153,8 +156,8 @@ External:
 
 # Table
 
-| col 1                                  | col 2                                                        | col 3                                                                        |
-| -------------------------------------- | ------------------------------------------------------------ | ---------------------------------------------------------------------------- |
-| r1-c1                                  | $x = {-b \pm \sqrt{b^2-4ac} \over 2a}$                       | r1-c3                                                                        |
-| $x = {-b \pm \sqrt{b^2-4ac} \over 2a}$ | ![The docusaurus.jpg Image](../../static/img/docusaurus.png) | r2-c3                                                                        |
-| r3-c1                                  | r3-c2                                                        | ![](https://seneca-ictoer.github.io/OERResources/OERTemplate/docusaurus.png) |
+| col 1                                  | col 2                                                     | col 3                                                                        |
+| -------------------------------------- | --------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| r1-c1                                  | $x = {-b \pm \sqrt{b^2-4ac} \over 2a}$                    | r1-c3                                                                        |
+| $x = {-b \pm \sqrt{b^2-4ac} \over 2a}$ | ![The docusaurus.jpg Image](../static/img/docusaurus.png) | r2-c3                                                                        |
+| r3-c1                                  | r3-c2                                                     | ![](https://seneca-ictoer.github.io/OERResources/OERTemplate/docusaurus.png) |
