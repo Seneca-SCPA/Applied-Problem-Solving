@@ -3,25 +3,22 @@ id: toc
 title: Table of contents
 sidebar_position: 2
 slug: /toc
-description: Contents of (course notes title here)
+description: Contents of APS145 Applied Problem Solving
 ---
 
 # Table of contents
 
-## Introduction <a id="part-a-introduction"></a>
+## Computational Thinking <a id="part-a-introduction"></a>
 
-- [Test Page](A-Introduction/testfile.md)
-- [Topic 2](A-Introduction/topic-file-2.md)
-- [Topic 3](A-Introduction/topic-file-3.md)
+- [Topic 1](01-Computational-Thinking/topic-file-1.md)
+- [Topic 2](01-Computational-Thinking/topic-file-2.md)
 
-## SubSection2
+## Process Charting
 
-- [Topic 1](B-SubSection2/topic-file-1.md)
-- [Topic 2](B-SubSection2/topic-file-2.md)
-- [Topic 3](B-SubSection2/topic-file-3.md)
+- [Topic 1](02-Process-Charting/topic-file-1.md)
+- [Topic 2](02-Process-Charting/topic-file-2.md)
 
-## SubSection3
+## The Basics
 
-- [Topic 1](C-SubSection3/topic-file-1.md)
-- [Topic 2](C-SubSection3/topic-file-2.md)
-- [Topic 3](C-SubSection3/topic-file-3.md)
+- [Topic 1](03-The-Basics/topic-file-1.md)
+- [Topic 2](03-The-Basics/topic-file-2.md)
