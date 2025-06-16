@@ -1,0 +1,8 @@
+https://seneca-scpa.github.io/APS145/toc
+https://seneca-scpa.github.io/APS145/Computational-Thinking/topic-file-1
+https://seneca-scpa.github.io/APS145/Computational-Thinking/topic-file-2
+https://seneca-scpa.github.io/APS145/Process-Charting/topic-file-1
+https://seneca-scpa.github.io/APS145/Process-Charting/topic-file-2
+https://seneca-scpa.github.io/APS145/The-Basics/topic-file-1
+https://seneca-scpa.github.io/APS145/The-Basics/topic-file-2
+https://seneca-scpa.github.io/APS145/syntax
