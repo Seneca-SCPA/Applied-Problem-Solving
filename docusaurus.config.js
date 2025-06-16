@@ -4,11 +4,11 @@ const darkCodeTheme = require('prism-react-renderer').themes.dracula;
 ORIGINAL OER TEMPLATE:
 const math = require('remark-math');
 const katex = require('rehype-katex');
-*/
 const toc = require('remark-toc');
 
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
+*/
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
@@ -67,8 +67,10 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/',
           editUrl: 'https://github.com/Seneca-SCPA/APS145/tree/main',
+          /*
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
+          */
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -77,12 +79,14 @@ module.exports = {
     ],
   ],
   stylesheets: [
+    /*
     {
       href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
       type: 'text/css',
       integrity: 'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
       crossorigin: 'anonymous',
     },
+    */
   ],
   clientModules: [require.resolve('./pwaCustomButton.js')],
   plugins: [
