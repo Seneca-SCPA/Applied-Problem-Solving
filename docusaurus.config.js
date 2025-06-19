@@ -15,7 +15,7 @@ module.exports = {
   title: 'APS145 - Applied Problem Solving',
   tagline: 'APS145 - Applied Problem Solving',
   url: 'https://seneca-SCPA.github.io/',
-  baseUrl: '/APS145/',
+  baseUrl: '/Applied-Problem-Solving/',
   trailingSlash: false,
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
@@ -66,7 +66,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/',
-          editUrl: 'https://github.com/Seneca-SCPA/APS145/tree/main',
+          editUrl: 'https://github.com/Seneca-SCPA/Applied-Problem-Solving/tree/main',
           /*
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],

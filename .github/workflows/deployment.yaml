@@ -49,10 +49,10 @@ jobs:
           yes "" | sudo ./install.sh
 
       - name: Build PDF
-        run: npx docusaurus-prince-pdf -u https://seneca-scpa.github.io/APS145/
+        run: npx docusaurus-prince-pdf -u https://seneca-scpa.github.io/Applied-Problem-Solving/
 
       - name: rename
-        run: mv ./pdf/seneca-scpa.github.io-APS145.pdf ./pdf/APS145.pdf
+        run: mv ./pdf/seneca-scpa.github.io-Applied-Problem-Solving.pdf ./pdf/APS145.pdf
 
       - name: Push pdf
         run: |
@@ -61,3 +61,4 @@ jobs:
           git add ./pdf
           git commit -m "add pdf file"
           git push origin gh-pages
+          
