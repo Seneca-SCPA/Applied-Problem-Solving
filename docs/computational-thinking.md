@@ -80,12 +80,16 @@ There are several significant pieces of the problem we can extract from this:
 
 - The website user-interface (displaying the logged-in clerks and providing action options when a specific clerk is selected).
   - Possible function name: "**InitializeClerksLoggedIn**"
+  - This function's scope will be limited to focusing only on preparing the interface, getting and displaying the logged-in user data listing, and providing the options for a selection.
 - Sending a message to a specific clerk
   - Possible function name: "**SendClerkMessage**"
+  - This function's scope will be limited to focusing only on how an administrator can send a message to a selected clerk from the list.
 - Disconnecting a specific clerk
   - Possible function name: "**DisconnectClerk**"
+  - This function's scope will be limited to focusing only on how a selected logged-in user is disconnected.
 - Assigning a new task to a specific clerk
   - Possible function name: "**AssignClerkTask**"
+  - This function's scope will be limited to focusing only on how a selected logged-in user is assigned a new task.
 
 These are four major pieces of the problem that can be extracted and focused on to solve individually. These can be compartmentalized into specific functions where the logic can be isolated to solve only that specific problem.
 
@@ -294,15 +298,17 @@ An algorithm is ultimately what we are trying to accomplish. **An algorithm is a
 
 The scope of an algorithm can be small or vast depending on the problem it is addressing. When we decompose larger problems into smaller ones, each smaller one (ex: function) has its own algorithm, but when we design the 'main' function that orchestrates the overall solution, it will tie together other algorithms (functions) as required to provide a full set of instructions for the entire solution.
 
-To communicate algorithms, programmers primarily use **pseudo code** as it is more efficient to work with and can provide more detail. However, **flowcharts** are used to provide a higher level view of the solution and is generally less detailed due to the complexity of the layout using graphical symbols. These forms of communicating logic will be covered in the next major section ([Documenting Logic](./documenting-logic.md)).
+Since algorithms detail a solution, they must be tested to ensure it in-fact provides a working solution to the entire problem and stays within the scope of the problem (see next sub-section on ([Testing](./computational-thinking.md#testing)).
+
+To manage and communicate algorithms, programmers primarily use **pseudo code** as it is more efficient to work with and can provide more detail. However, **flowcharts** are used to provide a higher level view of the solution and is generally less detailed due to the complexity of the layout using graphical symbols. These forms of communicating logic will be covered in the next major section ([Documenting Logic](./documenting-logic.md)).
 
 ## Testing
 
-Testing should be done throughout all parts of the computational thinking model. The scale at which you test will depend on what it is you need to test. Making changes to established logic for instance would be one such time to do a concentrated and focused test to ensure the changes didn't break anything or cause other unforeseen side-effects. The more targeted your testing is, the better your solution will be. However in reality, we usually do not have enough time to do the detailed testing we ideally should be doing, so we must be efficient about how and what we test.
+Testing **should be done repeatedly throughout all parts of the computational thinking model**. The scale at which you test will depend on what it is you need to test. Making changes to established logic for instance would be one such time to do a concentrated and focused test to ensure the changes didn't break anything or cause other unforeseen side-effects. The more targeted and frequent your testing is, the better your solution will be. However in reality, we usually do not have enough time to do the extensive detailed testing, so we must be efficient about how and what we test (something you get better at in time).
 
 What we minimally should test are all the known major logic flows that must occur in the solution as the application would be used by users the majority of the time. We accomplish this by creating "use-cases". These are the expected and common scenario's that would occur in the execution of the solution. Prioritizing the features and critical logic parts of the solution that are used the most by users will validate and ensure the solution is mostly bug-free and confirms it actually solves the problem.
 
-Testing often reveals weaknesses in the logic and where applications mostly fail, is in the unexpected things! After the core logic of the solution is tested, you would move on to more robust testing and include out of the norm conditions. One way to target this is the ask "what if.." and run that scenario through your solution to see if it works as expected. Be warned, once you start looking for exceptions and asking "what if", this can take you well beyond what is "reasonable" to test so know when to stop and when you have reached the "obscure" that goes beyond normal exceptions.
+Testing often reveals weaknesses in the logic and where applications mostly fail, is in the unexpected things! After the core logic of the solution is tested, you would move on to more robust testing and include out of the norm conditions. One way to target this is the ask "what if.." and run that scenario through your solution to see if it works as expected. Be warned, once you start looking for exceptions and asking "what if", this can take you well beyond what is "reasonable" to test so know when to stop when you have reached the "obscure" that goes well-beyond normal exceptions.
 
 ## Summary
 
