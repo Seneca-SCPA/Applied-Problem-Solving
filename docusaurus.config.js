@@ -21,7 +21,7 @@ module.exports = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'seneca-SCPA',
-  projectName: 'APS145',
+  projectName: 'Applied-Problem-Solving',
   themeConfig: {
     navbar: {
       title: 'APS145 - Applied Problem Solving',
