@@ -1,0 +1,9 @@
+https://seneca-scpa.github.io/APS145/computational-thinking
+https://seneca-scpa.github.io/APS145/documenting-logic
+https://seneca-scpa.github.io/APS145/variables
+https://seneca-scpa.github.io/APS145/functions
+https://seneca-scpa.github.io/APS145/selection
+https://seneca-scpa.github.io/APS145/iteration
+https://seneca-scpa.github.io/APS145/data-collections
+https://seneca-scpa.github.io/APS145/data-structures
+https://seneca-scpa.github.io/APS145/syntax
