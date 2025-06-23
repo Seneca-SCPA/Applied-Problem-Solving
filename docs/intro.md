@@ -26,10 +26,14 @@ Programmers all too often immediately jump into coding (programming with a speci
 **Having a prepared plan (algorithm) to work from significantly decreases coding development time and increases the quality of the solution**.
 :::
 
-## PDF Version
+## Downloadable PDF Version
 
-A pdf version of these notes can be found here: [PDF-Version](https://seneca-SCPA.github.io/APS145/pdf/APS145.pdf)
+If maintaining an internet connection is an issue or you simply like reading material from a PDF file, you may download these notes in a PDF format [HERE](https://seneca-SCPA.github.io/Applied-Problem-Solving/pdf/APS145.pdf).
 
-:::note
+:::note CITATION
 _The PDF file was created using the **pdf-prince plugin** and **Prince 14** which is available here: http://www.princexml.com/_
+:::
+
+:::caution NOTE
+These notes can be modified at any time and your version of the downloaded content could be at risk of not being current. It is therefore **advised you download the notes periodically to ensure you have the latest version.**
 :::

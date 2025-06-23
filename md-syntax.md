@@ -1,9 +1,9 @@
 ---
 id: syntax
-title: Temporary Markdown Reference
+title: Markdown Reference
 sidebar_position: 99
 slug: /syntax
-description: TBD
+description: Used during development for reference on how to use markdown syntax.
 ---
 
 # Header 1
