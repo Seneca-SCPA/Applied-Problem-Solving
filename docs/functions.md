@@ -37,8 +37,6 @@ There will be times when we need to use 3rd-party logic (known as **API's** : Ap
 
 These functions are known as "**closed-boxes**" (formerly "black boxes"). Closed-box functions are like "magic" because you call them and they do what you expect without explicitly knowing how it performed the task. Sometimes this can be a problem because if there is a bug (error) in that piece of logic, there is nothing you can do to fix it other than to redefine your own version of that logic in your own composed function.
 
-you simply "CALL" them when needed and you do not have to describe how the process works.
-
 :::tip How-To
 If you are calling a closed-box function from a flowchart, use the [striped rectangle symbol](./documenting-logic.md#graphical-symbols) to represent a complex function.
 :::
@@ -74,6 +72,10 @@ The comma delimited list of the date and time parts are the **parameters**. The 
 When it comes time to use this function, we will **CALL** it and supply it with the information it requires (we call this "passing" data to a function) in the form of **arguments**. An argument is a value sent to a function.
 
 Since the `DisplayDateTime` function has **six parameters**, we will need to send **six arguments** in the order it is expecting it:
+
+:::danger TODO
+Include an image to map out the passed values to the parameter variable names
+:::
 
 ```
 CALL DisplayDateTime (2025, 10, 25, 8, 53, 45)
