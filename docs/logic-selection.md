@@ -23,7 +23,13 @@ Here is how it would be done in a flowchart:
 
 ![Image of a flowchart applying a diamond to indicate selection](../static/img/selectionOptional.png)
 
-Notice the **DIAMOND shape** for the **selection decision** where the condition is being asked (the technical part is under it in smaller font). Something "extra" only occurs if it is evaluated to TRUE (yes).
+:::caution NOTE
+
+- Notice the **DIAMOND shape** for the **selection decision**.
+- The question is using **concise non-technical language**.
+- The technical part (optional) has less emphasis and is in smaller font.
+- Something "extra" only occurs if it is evaluated to TRUE (yes).
+  :::
 
 Here is the pseudo code equivalent:
 
@@ -105,7 +111,11 @@ Function: main
 
 Multiple alternative selection is like an 'E' in the road where **a decision must be made** and no matter what **only one** of **THREE or more** different logic paths will be executed but **not all**.
 
-Continuing with the preceding example, the application will now display an outcome no matter what for **EITHER** a new rainfall record was set, **OR** the record was TIED, **OR** a new record was NOT set.
+Continuing with the preceding example, the application will display an outcome no matter what for **only one** of these **three possibilities**:
+
+1. A **new rainfall record** was set.
+2. The current year rainfall **TIED** with the highest record.
+3. A new record was **NOT set**.
 
 Here is how it would be done in a flowchart:
 
@@ -144,7 +154,7 @@ Function: main
 
 ## Nesting Selection
 
-Do an example where a selection is within another selection
+Do an example where a selection is within another selection...
 
 - Flowchart
 - Pseudo Code
