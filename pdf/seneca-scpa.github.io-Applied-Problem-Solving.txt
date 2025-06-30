@@ -1,0 +1,8 @@
+https://seneca-scpa.github.io/Applied-Problem-Solving/computational-thinking
+https://seneca-scpa.github.io/Applied-Problem-Solving/documenting-logic
+https://seneca-scpa.github.io/Applied-Problem-Solving/variables
+https://seneca-scpa.github.io/Applied-Problem-Solving/functions
+https://seneca-scpa.github.io/Applied-Problem-Solving/selection
+https://seneca-scpa.github.io/Applied-Problem-Solving/iteration
+https://seneca-scpa.github.io/Applied-Problem-Solving/data-collections
+https://seneca-scpa.github.io/Applied-Problem-Solving/data-structures
