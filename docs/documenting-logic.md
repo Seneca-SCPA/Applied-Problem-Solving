@@ -92,22 +92,22 @@ Function: GetAnimalCount(animalType)
             count = 0
 
 2. DISPLAY:
-            Tap the [ADD 1] button to add 1 to the counter or
-            [DONE] when you are finished counting
+            "Tap the [ADD 1] button to add 1 to the counter or
+             [DONE] when you are finished counting
 
-            <animalType> Count:<count>  BUTTON: [ADD 1]
-                                        BUTTON: [DONE]
+             <animalType> Count:<count>  BUTTON: [ADD 1]
+                                         BUTTON: [DONE]"
 
 3. Which button was tapped?
     ADD 1:
-           a) Add 1 to <count>
+           a) Add 1 to count
            b) Repeat from step:2
 
     DONE :
           a) DISPLAY:
-                      Are you sure?
-                      BUTTON: [YES]
-                      BUTTON: [NO]
+                      "Are you sure?
+                       BUTTON: [YES]
+                       BUTTON: [NO]"
           b) Which button was tapped?
               NO:
                   1. Repeat from step:2
@@ -115,7 +115,7 @@ Function: GetAnimalCount(animalType)
     NONE :
           a) Repeat from step:2
 
-4. Return <count>
+4. Return count
 5. END
 ```
 
@@ -128,30 +128,30 @@ Function: EstimatedYardSize(totalAnimals, spacePerAnimal)
          estAnimalSpace = <totalAnimals> * <spacePerAnimal>
 
 2. DISPLAY:
-         Do you need a feeding trough?
-         BUTTON: [YES]
-         BUTTON: [NO]
+         "Do you need a feeding trough?
+          BUTTON: [YES]
+          BUTTON: [NO]"
 
 3. Which button was tapped?
     NO:
         a) feedTrough = 0
 
 4. DISPLAY:
-         Do you need a water trough?
-         BUTTON: [YES]
-         BUTTON: [NO]
+         "Do you need a water trough?
+          BUTTON: [YES]
+          BUTTON: [NO]"
 
 5. Which button was tapped?
     NO:
         a) waterTrough = 0
 
 6. DISPLAY:
-         Total Animals    : <totalAnimals>
-         Est. Animal Space: <estAnimalSpace> m2
-         Feed Trough      : <feedTrough>
-         water Trough     : <waterTrough>
-         ----------------------------------------
-         Total Estimate   : <estAnimalSpace> + <feedTrough> + <waterTrough>
+         "Total Animals    : <totalAnimals>
+          Est. Animal Space: <estAnimalSpace> m2
+          Feed Trough      : <feedTrough>
+          water Trough     : <waterTrough>
+          ----------------------------------------
+          Total Estimate   : <estAnimalSpace> + <feedTrough> + <waterTrough>"
 
 7. END
 ```

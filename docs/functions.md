@@ -84,7 +84,7 @@ CALL: DisplayDateTime (2025, 10, 25, 11, 53, 45)
 Each argument sent to the function will be assigned to the corresponding parameter variable and then the function would construct the output assembling the variables into their appropriate sequence:
 
 ```
-<year>-<month>-<day> <hour>:<minute>:<second>
+year-month-day hour:minute:second
 ```
 
 The expected outcome of this function call, would be to display the date time data as:
@@ -127,9 +127,9 @@ Function: Multiply (number, multiple)
 1. DECLARE:
       result
 
-2. ASSIGN: <result> = <number> * <multiple>
+2. ASSIGN: result = number * multiple
 
-3. RETURN <result>
+3. RETURN result
 
 4. End
 ```
@@ -139,7 +139,7 @@ This can be refined by not creating a variable:
 ```
 Function: Multiply (number, multiple)
 
-1. RETURN <number> * <multiple>
+1. RETURN number * multiple
 
 2. End
 ```
@@ -157,7 +157,7 @@ Function: main
       coffeePrice = 2.99
       total
 
-2. ASSIGN: <total> = CALL: Multiply(<coffeePrice>, 5)
+2. ASSIGN: total = CALL: Multiply(coffeePrice, 5)
 
 3. DISPLAY:
       "The cost of 5 coffee's is: $<total>"
@@ -174,7 +174,7 @@ Let's do another version of the preceding example using this method (**notice th
 ```
 Function: Multiply (number, multiple, total)
 
-1. ASSIGN: <total> = <number> * <multiple>
+1. ASSIGN: total = number * multiple
 
 2. End
 ```
@@ -194,7 +194,7 @@ Function: main
       coffeePrice = 2.99
       total
 
-2. CALL: Multiply(<coffeePrice>, 5, <total>)
+2. CALL: Multiply(coffeePrice, 5, total)
 
 3. DISPLAY:
       "The cost of 5 coffee's is: $<total>"
@@ -223,8 +223,8 @@ Function: Multiply (number, multiple, tax)
       result
       taxPercent = 0.13
 
-2. ASSIGN: <tax>  = <number> * <multiple>
-3. ASSIGN: <result> = <number> * <multiple> + <tax>
+2. ASSIGN: tax  = number * multiple
+3. ASSIGN: result = number * multiple + tax
 
 4. RETURN <result>
 
@@ -245,7 +245,7 @@ Function: main
       tax
       total
 
-2. ASSIGN: <total> = CALL: Multiply(<coffeePrice>, 5, <tax>)
+2. ASSIGN: total = CALL: Multiply(coffeePrice, 5, tax)
 
 3. DISPLAY:
       "The cost of a coffee is:     $<coffeePrice>
