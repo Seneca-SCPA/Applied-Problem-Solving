@@ -17,7 +17,7 @@ Modularity is an important aspect of programming as it provides flexibility in o
 
 Functions represent algorithms comprised of several logical steps which perform a specific task. Functions are defined **once and in one place**. This is what makes it efficient and simpler to manage since modifications and trouble shooting bugs directs you to a single source.
 
-When it comes time to construct a complete solution, it is nice to be able to reference functions which do all the work (hiding the details) and simplifies the overall readability of the instructions so long as good naming practices have been applied.
+When it's time to construct a complete solution, it is nice to be able to reference functions which do all the work (hiding the details) and simplifies the overall readability of the instructions so long as good naming practices have been applied.
 
 Sometimes access to the composition of a function may not be possible. When you don't have access to the details of a function we refer to this as a **closed-box**.
 
@@ -35,7 +35,7 @@ As mentioned in the [Computational Thinking](./computational-thinking.md) sectio
 
 There will be times when we need to use 3rd-party logic (known as **API's** : Application Programming Interface) or other prepared logic from **system library functions** where we **don't have access to the details of how they work**.
 
-These functions are known as "**closed-boxes**" (formerly "black boxes"). Closed-box functions are like "magic" because you call them and they do what you expect without explicitly knowing how it performed the task. Sometimes this can be a problem because if there is a bug (error) in that piece of logic, there is nothing you can do to fix it other than to redefine your own version of that logic in your own composed function.
+These functions are known as "**closed-boxes**" (formerly "black boxes"). Closed-box functions are like "magic" because you call them and they do what you expect without explicitly knowing how it performed the task. It is important to note, sometimes this can be a problem because if there is a bug (error) or a missing piece of functionality in that piece of logic, there is nothing you can do to address it other than to redefine your own version of that logic in your own composed function.
 
 :::tip How-To
 If you are calling a closed-box function from a flowchart, use the [striped rectangle symbol](./documenting-logic.md#graphical-symbols) to represent a complex function.
@@ -61,7 +61,9 @@ For the purposes of these notes, we'll be designating **`pseudo code` to always 
 
 ## Passing Information
 
-Functions usually require information to be provided or sent to it to do its task. When a function requires information, it is constructed with one or more **parameters**. Parameter is a fancy term used that essentially means a variable. For example, if we create a function that is responsible for displaying the date and time in a standard ISO 8601 format (YYYY-MM-DD HH:MM:SS), the function would require all six of those specific parts to be sent:
+Functions usually require information to be provided or sent to it to do its task. When a function requires information, it is constructed with one or more **parameters**. Parameter is a fancy term used that essentially means a variable.
+
+For example, if we create a function that is responsible for displaying the date and time in a standard ISO 8601 format (YYYY-MM-DD HH:MM:SS), the function would require all six of those specific parts of data to be supplied:
 
 ```
 DisplayDateTime (year, month, day, hour, minute, second)
@@ -69,37 +71,190 @@ DisplayDateTime (year, month, day, hour, minute, second)
 
 The comma delimited list of the date and time parts are the **parameters**. The parameters act as variables which can be used in the function logic to access the values sent to the function.
 
-When it comes time to use this function, we will **CALL** it and supply it with the information it requires (we call this "passing" data to a function) in the form of **arguments**. An argument is a value sent to a function.
+When it comes time to use this function, we will **CALL** it and supply the function with the information it requires (we call this "passing" data to a function) in the form of **arguments**. An argument is a value sent to a function.
 
 Since the `DisplayDateTime` function has **six parameters**, we will need to send **six arguments** in the order it is expecting it:
 
-:::danger TODO
-Include an image to map out the passed values to the parameter variable names
-:::
-
 ```
-CALL DisplayDateTime (2025, 10, 25, 8, 53, 45)
+CALL: DisplayDateTime (2025, 10, 25, 11, 53, 45)
 ```
 
-Each argument sent to the function will be assigned to the corresponding parameter variable.
+![Image showing the mapping of arguments to parameter variables](../static/img/functionPassData.png)
+
+Each argument sent to the function will be assigned to the corresponding parameter variable and then the function would construct the output assembling the variables into their appropriate sequence:
+
+```
+<year>-<month>-<day> <hour>:<minute>:<second>
+```
 
 The expected outcome of this function call, would be to display the date time data as:
 
 ```
-2025-10-25 08:53:45
+2025-10-25 11:53:45
 ```
 
 ## Returning Information
 
+Functions often do more than just an explicit task - it is quite common for information to be returned to the caller of the function (ex: back to where the function was called from). Most programming languages support flexible methods in how information can be returned from a function:
+
+1. Explicit
+2. Implicit
+3. Both explicit and implicit
+
+Let's have a look at these methods and how they will be documented in pseudo code.
+
+:::tip Reminder
+Since these notes will be limiting the use of flowcharts to the `main` overview process only, we won't need to concern ourselves with documenting return values for flowcharting.
+:::
+
+<!--
 Explain how to return data from a function in two possible ways:
 
 1. Explicitly using "return"
 2. Implicitly using the argument variables
 
+-->
+
 ### Explicit Return
 
-Explain how to return explicitly - use return
+Returning information from a function **explicitly** is accomplished by using the keyword: **`return`**. This method provides a **single variable of information** to be returned from the function.
+
+For example, if we have a function: **`Multiply (number, multiple)`** which will return the results of multplying the provided `number` by the provided `multiple`, the logic would look like the following:
+
+```
+Function: Multiply (number, multiple)
+
+1. DECLARE:
+      result
+
+2. ASSIGN: <result> = <number> * <multiple>
+
+3. RETURN <result>
+
+4. End
+```
+
+This can be refined by not creating a variable:
+
+```
+Function: Multiply (number, multiple)
+
+1. RETURN <number> * <multiple>
+
+2. End
+```
+
+Here is how the function can be used from a **flowchart**:
+
+![Flowchart image showing the function returning a value and being assigned to a variable](../static/img/functionReturnExplicit.png)
+
+Here is how the function can be used from **pseudo code**:
+
+```
+Function: main
+
+1. DECLARE:
+      coffeePrice = 2.99
+      total
+
+2. ASSIGN: <total> = CALL: Multiply(<coffeePrice>, 5)
+
+3. DISPLAY:
+      "The cost of 5 coffee's is: $<total>"
+
+4. End
+```
 
 ### Implicit Return
 
-Explain how to return implicitly - via argument(s)
+Returning information implicitly involves updating a parameter variable. The understanding with this method is that any changes made to a parameter variable will directly affect the original. This can simplify how return values are documented but also can lead to missed data changes since it is not as clear.
+
+Let's do another version of the preceding example using this method (**notice the extra parameter `total`**).
+
+```
+Function: Multiply (number, multiple, total)
+
+1. ASSIGN: <total> = <number> * <multiple>
+
+2. End
+```
+
+The `total` parameter variable was used as the return value from the function by assigning the result of the calculation to that variable.
+
+Here is how the function can be used from a **flowchart**:
+
+![Flowchart image showing the function returning a value and being assigned to a variable](../static/img/functionReturnImplicit.png)
+
+Here is how the function can be used from **pseudo code**:
+
+```
+Function: main
+
+1. DECLARE:
+      coffeePrice = 2.99
+      total
+
+2. CALL: Multiply(<coffeePrice>, 5, <total>)
+
+3. DISPLAY:
+      "The cost of 5 coffee's is: $<total>"
+
+4. End
+```
+
+The advantage of implicit returns is it is not limited to a single variable return value like the explicit method. The **implicit method, can return multiple values through more than one parameter variable**!
+
+:::tip Note
+Some programming languages refer to implicit return values through parameters as:
+
+- output parameters
+- pointers
+- references
+  :::
+
+### Both Explicit AND Implicit Returns
+
+A combination of explicit and implicit methods can be done too! Expanding on the preceding examples, we will add a tax component. The calculated tax amount will be returned implicitly via the tax parameter and the total (including tax) will be returned explicitly:
+
+```
+Function: Multiply (number, multiple, tax)
+
+1. DECLARE:
+      result
+      taxPercent = 0.13
+
+2. ASSIGN: <tax>  = <number> * <multiple>
+3. ASSIGN: <result> = <number> * <multiple> + <tax>
+
+4. RETURN <result>
+
+5. End
+```
+
+Here is how the function can be used from a **flowchart**:
+
+![Flowchart image showing the function returning a value and being assigned to a variable](../static/img/functionReturnImplicitExplicit.png)
+
+Here is how the function can be used from **pseudo code**:
+
+```
+Function: main
+
+1. DECLARE:
+      coffeePrice = 2.99
+      tax
+      total
+
+2. ASSIGN: <total> = CALL: Multiply(<coffeePrice>, 5, <tax>)
+
+3. DISPLAY:
+      "The cost of a coffee is:     $<coffeePrice>
+       The tax for 5 coffee's is:   $<tax>
+       The total for 5 coffee's is: %<total>"
+
+4. End
+```
+
+:::danger WARNING
+As you can see in this example, it can be easy to "miss" how the `tax` is assigned because it is IMPLICITLY updated by the function.
+:::

@@ -35,7 +35,7 @@ This may seem obvious, but understanding the problem is critical given the major
 
 Developing computer solutions is a time demanding and costly process so be sure to have a complete understanding of the problem to avoid wasting time and money on efforts not applicable to the problem you need to solve.
 
-The most common failure is making assumptions. The problem is not always clear and depending on who is responsible for defining the problem (the client versus a project manager for instance), the details can be misleading or completely missing critical information. Assumptions are easy to make in cases where meaning is ambiguous or not explicit so be sure to confirm your assumptions before proceeding.
+The most common failure is **making assumptions**. The problem is not always clear and depending on who is responsible for defining the problem (the client versus a project manager for instance), the details can be misleading or completely missing critical information. Assumptions are easy to make in cases where meaning is ambiguous or not explicit so be sure to confirm your assumptions before proceeding.
 
 ---
 
@@ -50,7 +50,7 @@ The issue is in the term "**doesn't work**". This phrase can so easily be misint
 - Could it be a minor cosmetic or formatting problem that only one person doesn't like?
 - Is the application interface components not arranged in the way this one person likes?
 
-If you make the assumption of any one of these things, you will most likely be incorrect. In these situations, you MUST seek clarity and precisely determine what "doesn't work" actually means. Without an explicitly defined problem, you can't deliver a solution!
+If you make the assumption of any one of these things, you will most likely be incorrect. In these situations, **you MUST seek clarity** and precisely determine what "doesn't work" actually means. Without an explicitly defined problem, you can't deliver a solution!
 
 :::caution
 The viewpoint of a "problem" is often very subjective - what one person may see as an issue, another person may not agree. These issues are usually worked out by a project manager but for smaller projects, it is unlikely to have this benefit, so keep your guard up and always make sure there is general consensus supporting a common request.
@@ -62,7 +62,7 @@ Having a clear understanding of the problem will provide you with the **scope an
 
 ![Problem Decomposed](../static/img/Decomp.png)
 
-Most problems are too complex or are too dynamic in nature to immediately start creating a solution. Decomposing a problem into many smaller scoped problems greatly simplify many aspects of creating a solution. This step is mainly focused on identifying the major pieces of logic that can be extracted from the problem.
+Most problems are too complex or are too dynamic in nature to immediately start creating a solution. Decomposing a problem into **many smaller scoped problems** greatly simplify many aspects of creating a solution. This step is mainly focused on identifying the major pieces of logic that can be extracted from the problem.
 
 Isolating a specific part of a problem, removes irrelevant parts and greatly reduces the overall complexity for that part. This allows us to easily concentrate only on the important aspects of the smaller problem. Generally, there is no such thing as a complex problem – we just need to break it down into easier to solve smaller parts!
 
@@ -87,7 +87,7 @@ There are several significant pieces of the problem we can extract from this:
   - Possible function name: "**AssignClerkTask**"
   - This function's scope will be limited to focusing only on how a selected logged-in user is assigned a new task.
 
-These are four major pieces of the problem that can be extracted and focused on to solve individually. These can be compartmentalized into specific functions where the logic can be isolated to solve only that specific problem.
+These are four major pieces of the problem that can be extracted and focused on to solve individually. These can be compartmentalized into specific functions where the logic can be isolated to solve only that specific part of the problem.
 
 ---
 
@@ -294,7 +294,7 @@ With this function, it can be called in many different ways but no matter what, 
 `CALL SortReport(reportData, "salesperson", "DESCENDING")`
 
 :::tip Summary
-Abstraction is the process of simplifying something back to a general concept or idea.
+Abstraction is the process of simplifying something back to a **general concept or idea**.
 :::
 
 :::caution
@@ -321,20 +321,20 @@ Testing **should be done repeatedly throughout all parts of the computational th
 
 The more targeted and frequent your testing is, the better your solution will be. However in reality, we usually do not have enough time to do extensive detailed testing, so we must be efficient about how and what we test (something you get better at in time).
 
-What we minimally should test are all the known major logic flows that must occur to solve the problem and as the application would be used by users the majority of the time. We accomplish this by creating "use-cases". These are the expected and common scenario's that would occur in the execution of the solution. Prioritizing the features and critical logic parts of the solution that are used the most by users will validate and ensure the solution is mostly bug-free and confirms it actually solves the problem.
+What we minimally should test are **all the known major logic flows that must occur to solve the problem** and as the application would be used by users the majority of the time. We accomplish this by creating "use-cases". These are the expected and common scenario's that would occur in the execution of the solution. Prioritizing the features and critical logic parts of the solution that are used the most by users will validate and ensure the solution is mostly bug-free and confirms it actually solves the problem.
 
-Testing is where we often reveal weaknesses in the logic and where applications mostly fail, is in the unexpected things! After the core logic of the solution is tested, you would move on to more robust testing and include out of the norm conditions. One way to target this is the ask "what if.." and run that scenario through your solution to see if it works as expected. Be warned, once you start looking for exceptions and asking "what if", this can take you well beyond what is "reasonable" to test so know when to stop and when you have reached the "obscure" that goes well-beyond normal exceptions.
+Testing is where we often reveal weaknesses in the logic and where applications mostly fail, is in the unexpected things! After the core logic of the solution is tested, you would move on to more robust testing and **include out of the norm conditions**. One way to target this is the ask `"what if.."` and run that scenario through your solution to see if it works as expected. Be warned, once you start looking for exceptions and asking "what if", this can take you well beyond what is "reasonable" to test so know when to stop and when you have reached the "obscure" that goes well-beyond normal exceptions.
 
 ## Summary
 
 In summary, programmers should plan a solution applying the computational thinking model BEFORE starting any coding. Planning ahead and having a framework to work from **accelerates your coding time and results in substantially fewer errors** since the difficult part of determining the logic and flow of the solution is already done. **As a programmer, the coding part should only involve the syntax and implementation of the logic based on a prepared plan**.
 
-The extent to which you apply the computational model will vary depending on the problem. All parts of the model are important and will lead to great improvements in your skills to build solutions, however a few of the parts are mandatory and you should most definitely get in the habit of doing the following ALWAYS:
+The extent to which you apply the computational model will vary depending on the problem. All parts of the model are important and will lead to great improvements in your skills to build solutions, however a couple of the parts are mandatory and you should definitely get in the habit of doing the following ALWAYS:
 
 - Understand the problem
 - Decomposition
 
-The other parts can take time and repetition in applying the concepts before you get comfortable and more skilled at using them. Abstraction is probably the most challenging of them because often it can be over-applied (just because you can abstract something doesn't necessarily mean you should, and there are varying scales at which you can apply it).
+The other parts may take time and repetition in applying the concepts before you get comfortable and more skilled at using them. Abstraction is probably the most challenging of them because often it can be over-applied (just because you can abstract something doesn't necessarily mean you should, and there are varying scales at which you can apply it).
 
 The act of **coding a solution into a program should actually be the least time consuming part of a project**. If you find otherwise, it likely means you aren't working from a planned solution, or the prepared logical plan is poorly done and needs more work.
 
