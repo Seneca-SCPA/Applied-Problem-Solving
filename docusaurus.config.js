@@ -10,6 +10,9 @@ import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 */
 
+/* Glossary definitions (definition list support) */
+import remarkDefList from 'remark-deflist';
+
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'APS145 - Applied Problem Solving',
@@ -71,6 +74,7 @@ module.exports = {
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
           */
+          remarkPlugins: [remarkDefList],
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

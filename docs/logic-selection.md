@@ -152,9 +152,58 @@ Function: main
 5. End
 ```
 
-## Nesting Selection
+## Nested Selection
 
-Do an example where a selection is within another selection...
+![](../static/img/selectionNestedTitle.png)
 
-- Flowchart
-- Pseudo Code
+Nesting is a way to sequence statements or logic constructs such as selection and iteration **within another logical construct**. It is a way to group statements or other logic under a dependency. In the case of selection, this would mean anything intended to execute when the selection statement is evaluated to TRUE, would be nested within the limits of the selection.
+
+Using the preceding example on yearly rainfall, let's say we want to have different levels of "excitement" when a new rainfall record is determined. If the old record is beat within 10 mm (inclusive), then we want to state: "A new record has been set!", but when it is beaten by more than 10 mm, we want it to state: "WOW! The old record was blown away and a new record has been set!".
+
+Implementing this, would require logic to be placed within the section where it is determined the record was beaten - this would be nested selection!
+
+### Flowchart
+
+![](../static/img/selectionNested.png)
+
+The golden highlighted section encompasses the **nested selection** which is only executed if the parent selection that tests for a beaten record evaluates to TRUE.
+
+### Pseudo Code
+
+```
+Function: main
+
+1. DECLARE
+      yearlyMM = 325
+      recordMM = 310
+      delta
+
+2. DISPLAY:
+      "Current yearly rainfall:   <yearlyMM> mm
+       Highest recorded rainfall: <recordMM> mm"
+
+3. What is the state of the current year rainfall?
+      NEW RECORD SET (yearlyMM > recordMM):
+                  a) ASSIGN: delta = yearlyMM - recordMM
+                  b) ASSIGN: recordMM = yearlyMM
+                  c) Is the record beaten by more than 10mm?
+                        YES (delta > 10):
+                              1. DISPLAY:
+                                    "WOW! The old record was blown away and a new record has been set!"
+                        NO:
+                              1. DISPLAY:
+                                    "A new yearly record has been set!"
+
+      TIED RECORD (yearlyMM == recordMM):
+                  a) DISPLAY:
+                        "TIED the highest record!"
+
+      LESS THAN THE RECORD (yearlyMM < recordMM) :
+                  a) DISPLAY:
+                        "Did NOT set a new record!"
+
+4. ... Continue with program logic ...
+5. End
+```
+
+Step #3 is the **outer selection** (parent) and sub-step c) within the "NEW RECORD SET" section is the **nested selection**. Nesting is only executed if the parent (outer) dependency is evaluated to TRUE.
