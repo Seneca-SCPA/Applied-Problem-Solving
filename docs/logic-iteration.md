@@ -196,5 +196,6 @@ Here is the pseudo code equivalent:
 
 **Key Parts**:
 
-- Step `2.` is the main game loop (outer/parent)
-- Step `2.A.2.` is the **NESTED** player moves loop that occurs within a game until it's over
+Step `2.` is the main game loop (outer/parent)
+
+Step `2.A.2.` is the **NESTED** player moves loop that occurs within a game until it's over
