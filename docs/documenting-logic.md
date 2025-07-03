@@ -99,21 +99,21 @@ Function: GetAnimalCount(animalType)
                                          BUTTON: [DONE]"
 
 3. Which button was tapped?
-    ADD 1:
-           a) Add 1 to count
-           b) Repeat from step:2
+    A. ADD  :
+            1. Add 1 to count
+            2. Repeat from step:2
 
-    DONE :
-          a) DISPLAY:
+    B. DONE :
+            1. DISPLAY:
                       "Are you sure?
                        BUTTON: [YES]
                        BUTTON: [NO]"
-          b) Which button was tapped?
-              NO:
-                  1. Repeat from step:2
+            2. Which button was tapped?
+                  A. NO:
+                        1. Repeat from step:2
 
-    NONE :
-          a) Repeat from step:2
+    C. NONE :
+            1. Repeat from step:2
 
 4. Return count
 5. END
@@ -133,8 +133,8 @@ Function: EstimatedYardSize(totalAnimals, spacePerAnimal)
           BUTTON: [NO]"
 
 3. Which button was tapped?
-    NO:
-        a) feedTrough = 0
+      A. NO:
+            1. ASSIGN: feedTrough = 0
 
 4. DISPLAY:
          "Do you need a water trough?
@@ -142,8 +142,8 @@ Function: EstimatedYardSize(totalAnimals, spacePerAnimal)
           BUTTON: [NO]"
 
 5. Which button was tapped?
-    NO:
-        a) waterTrough = 0
+      A. NO:
+            1. ASSIGN: waterTrough = 0
 
 6. DISPLAY:
          "Total Animals    : <totalAnimals>

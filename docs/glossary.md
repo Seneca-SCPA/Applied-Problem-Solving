@@ -33,6 +33,9 @@ description: Glossary of key terms and definitions
 **Selection**
 : A construct that enables decisions in a program to adapt to changing conditions and execute different logic flows.
 
+**Semantic**
+: Is another word for logic. It is the logical definition and meaning of an algorithm.
+
 **Statement**
 : A single line of instruction (step) such as a calculation, action to display or receive user input.
 

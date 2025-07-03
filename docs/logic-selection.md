@@ -9,7 +9,9 @@ description: Logic-Selection (decision)
 
 ## Overview
 
-Computers programs are not very useful without the ability to adjust to changing conditions. For programs to react and change logical direction there needs to be a mechanism to allow changes to when specific logic should be executed and also when not to execute certain logic. The concept of **Selection** is what provides programs the ability to apply logical decisions which can alter the execution sequence. There are several variations of selection (especially when coding it in a computer language), however the main three logical flows will be examined here.
+Computers programs are not very useful without the ability to adjust to changing conditions. A mechanism is therefore needed to enable programs the ability to evaluate when to change logical direction which can include executing specific logic and/or to avoid specific logic.
+
+The concept of **Selection** is what provides programs the ability to apply logical decisions which can alter the execution sequence. There are several variations of selection (especially when coding it in a specific computer language), however the main three logical flows will be examined here.
 
 ## Optional Selection
 
@@ -18,6 +20,8 @@ Computers programs are not very useful without the ability to adjust to changing
 Optional selection provides a program the ability to execute **additional logic** to do something **only if one or more conditions are determined TRUE**, otherwise, the main program logic continues as normal.
 
 Let's review part of a program where the total yearly rainfall is being evaluated to see if it has set a new record. The program should update the highest record only when the yearly rainfall amount is determined to be more than the last known record. The logic to update the record should only occur if the yearly rainfall has been determined to be greater than the last known record. If the yearly rainfall is 325 mm and the last known record is 310 mm, we should expect the logic to update the record to the new value, otherwise, do nothing (continue with the normal program logic).
+
+### Flowchart
 
 Here is how it would be done in a flowchart:
 
@@ -30,6 +34,8 @@ Here is how it would be done in a flowchart:
 - The technical part (optional) has less emphasis and is in smaller font.
 - Something "extra" only occurs if it is evaluated to TRUE (yes).
   :::
+
+### Pseudo Code
 
 Here is the pseudo code equivalent:
 
@@ -45,9 +51,9 @@ Function: main
        Highest recorded rainfall: <recordMM> mm"
 
 3. Is yearlyMM > recordMM ?
-      YES:
-            a) ASSIGN: recordMM = yearlyMM
-            b) DISPLAY:
+      A. YES:
+            1. ASSIGN: recordMM = yearlyMM
+            2. DISPLAY:
                   "A new yearly record has been set!"
 
 4. ... Continue with program logic ...
@@ -75,9 +81,13 @@ Alternative selection is like a 'Y' in the road where **a decision must be made*
 
 Continuing with the preceding example, the application will now display an outcome no matter what. **EITHER** a new rainfall record was set, **OR** a new record was NOT set.
 
+### Flowchart
+
 Here is how it would be done in a flowchart:
 
 ![](../static/img/selectionAlternative.png)
+
+### Pseudo Code
 
 And here is how it would be done in pseudo code:
 
@@ -93,12 +103,12 @@ Function: main
        Highest recorded rainfall: <recordMM> mm"
 
 3. Is yearlyMM > recordMM ?
-      YES:
-            a) ASSIGN: recordMM = yearlyMM
-            b) DISPLAY:
+      A. YES:
+            1. ASSIGN: recordMM = yearlyMM
+            2. DISPLAY:
                   "A new yearly record has been set!"
-      NO :
-            a) DISPLAY:
+      B. NO :
+            1. DISPLAY:
                   "Did NOT set a new record!"
 
 4. ... Continue with program logic ...
@@ -117,9 +127,13 @@ Continuing with the preceding example, the application will display an outcome n
 2. The current year rainfall **TIED** with the highest record.
 3. A new record was **NOT set**.
 
+### Flowchart
+
 Here is how it would be done in a flowchart:
 
 ![](../static/img/selectionAlternativeMulti.png)
+
+### Pseudo Code
 
 And here is how it would be done in pseudo code:
 
@@ -135,18 +149,18 @@ Function: main
        Highest recorded rainfall: <recordMM> mm"
 
 3. What is the state of the current year rainfall?
-      NEW RECORD SET (yearlyMM > recordMM):
-                  a) ASSIGN: recordMM = yearlyMM
-                  b) DISPLAY:
-                        "A new yearly record has been set!"
+      A. NEW RECORD SET (yearlyMM > recordMM):
+            1. ASSIGN: recordMM = yearlyMM
+            2. DISPLAY:
+                  "A new yearly record has been set!"
 
-      TIED RECORD (yearlyMM == recordMM):
-                  a) DISPLAY:
-                        "TIED the highest record!"
+      B. TIED RECORD (yearlyMM == recordMM):
+            1. DISPLAY:
+                  "TIED the highest record!"
 
-      LESS THAN THE RECORD (yearlyMM < recordMM) :
-                  a) DISPLAY:
-                        "Did NOT set a new record!"
+      C. LESS THAN THE RECORD (yearlyMM < recordMM) :
+            1. DISPLAY:
+                  "Did NOT set a new record!"
 
 4. ... Continue with program logic ...
 5. End
@@ -183,27 +197,33 @@ Function: main
        Highest recorded rainfall: <recordMM> mm"
 
 3. What is the state of the current year rainfall?
-      NEW RECORD SET (yearlyMM > recordMM):
-                  a) ASSIGN: delta = yearlyMM - recordMM
-                  b) ASSIGN: recordMM = yearlyMM
-                  c) Is the record beaten by more than 10mm?
-                        YES (delta > 10):
-                              1. DISPLAY:
-                                    "WOW! The old record was blown away and a new record has been set!"
-                        NO:
-                              1. DISPLAY:
-                                    "A new yearly record has been set!"
+      A. NEW RECORD SET (yearlyMM > recordMM):
+            1. ASSIGN: delta = yearlyMM - recordMM
+            2. ASSIGN: recordMM = yearlyMM
+            3. Is the record beaten by more than 10mm?
+                  A. YES (delta > 10):
+                        1. DISPLAY:
+                              "WOW! The old record was blown away and a new record has been set!"
+                  B. NO:
+                        1. DISPLAY:
+                              "A new yearly record has been set!"
 
-      TIED RECORD (yearlyMM == recordMM):
-                  a) DISPLAY:
-                        "TIED the highest record!"
+      B. TIED RECORD (yearlyMM == recordMM):
+            1. DISPLAY:
+                  "TIED the highest record!"
 
-      LESS THAN THE RECORD (yearlyMM < recordMM) :
-                  a) DISPLAY:
-                        "Did NOT set a new record!"
+      C. LESS THAN THE RECORD (yearlyMM < recordMM) :
+            1. DISPLAY:
+                  "Did NOT set a new record!"
 
 4. ... Continue with program logic ...
 5. End
 ```
 
-Step #3 is the **outer selection** (parent) and sub-step c) within the "NEW RECORD SET" section is the **nested selection**. Nesting is only executed if the parent (outer) dependency is evaluated to TRUE.
+Step `3.` is the **outer selection** (parent) and sub-step `3.A.3.` within the "NEW RECORD SET" section is the **nested selection**. Nesting is only executed if the parent (outer) dependency is evaluated to TRUE.
+
+## Testing
+
+As referred to in the computational thinking - [testing](./computational-thinking.md#testing) section, "what-if" scenarios are used to help test the logic and expected outcomes. **Selection is pivotal to controlling program execution** to take the necessary logic paths required to address all reasonable possibilities and certainly the expected paths to address the problem.
+
+Semantic failures are often directly tied to selection logic, so it is important you build strong selection skills - these skills will also help you be a more efficient and effective problem solver and programmer.
