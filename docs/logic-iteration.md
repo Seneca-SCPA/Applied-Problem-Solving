@@ -22,6 +22,8 @@ To manage a varying possible number of repetitions (iterations/loops), we must a
 
 ## Optional Iteration
 
+![Nondescript Image showing optional iteration flow](../static/img/iterationOptionalTitle.png)
+
 Optional iteration is the most common. This involves **checking a condition BEFORE** the possible repeating logic to determine if looping is even required and if so, iterate **until no more iterations are required**. This could result in:
 
 - No iterations
@@ -93,6 +95,8 @@ Function: CreateList
 - **Step 3.A.3.** is critical as it directs the next executed piece of logic back to the add another item prompt where repetition will repeat from.
 
 ## Mandatory Iteration
+
+![Nondescript Image showing mandatory iteration flow](../static/img/iterationMandatoryTitle.png)
 
 Mandatory iteration is almost the same as optional iteration with the only difference being in the placement of the condition. Unlike optional iteration where the condition is checked first, in mandatory iteration **the condition is placed AFTER** the logic that would be repeated and will iterate **until no more iterations are required**. This results in:
 

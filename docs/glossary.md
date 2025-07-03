@@ -30,6 +30,9 @@ description: Glossary of key terms and definitions
 : Content (statement(s), selection, or iteration) residing within a preceding construct such as a selection or iteration.
 : The nested content would be dependant on a preceding construct and in the case of pseudo code would be indented under it.
 
+**Obfuscate**
+: To purposely confuse and misdirect meaning usually by way of applying meaningless names to variables and functions.
+
 **Selection**
 : A construct that enables decisions in a program to adapt to changing conditions and execute different logic flows.
 

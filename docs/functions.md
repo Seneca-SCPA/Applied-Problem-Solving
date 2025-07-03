@@ -31,6 +31,50 @@ As mentioned in the [Computational Thinking](./computational-thinking.md) sectio
 - [Abstraction](./computational-thinking.md#abstraction): Usually based on a pattern of functions where the concept is the same and can be combined to simplify the usability of a single function.
   :::
 
+## Function Identifiers (name)
+
+Similarly, as variable identifiers should be well thought out and purposefully named to best describe the information it will be representing, so should the function naming process. **Variables are related to DATA**, but **functions are related to ACTION**. Therefore, **function identifiers should be well thought out and purposefully named to best describe their logical purpose and action**. Providing meaningful names to functions will contribute towards easier to read and manage logic (or code).
+
+Reading logic that is applying functions should be like reading a standard sentence or close to it. There should be no mystery of WHAT the function's purpose is based on it's name however, like in variable naming practices, we need to be mindful of efficiency as we don't want to be referring to excessively long names (and in the case of programming code, we don't want to be typing them either!). That being said, unlike variable naming, function names can be a little longer given the importance of having the name best represent WHAT it does so we don't want to over abbreviate.
+
+For example, if we need a function to write program data to a file in JSON format we could create a function with the following signature:
+
+- Function: `WriteDataJSON (data)`
+- Parameter: `data` is what will be written to file in JSON format
+- Returns: TRUE (success) or FALSE (fail)
+
+Here's an excerpt of how it would be called:
+
+```
+1. DECLARE:
+      data
+      result
+
+2. -> 99. [ logic capturing a lot of information stored to 'data' ]
+
+100. ASSIGN: result = WriteDataJSON (data)
+101. Was the data successfully exported to a file?
+      A. result=TRUE:
+            1. DISPLAY:
+                  "Data exported to JSON file!"
+      B. result=FALSE:
+            1. DISPLAY:
+                  "FAILED to write to file."
+102. End
+```
+
+Now let's consider a poorly named function that writes data to a JSON formatted file. If we replaced the name with `FormatDataJSON (data)`. While not totally incorrect, it does not reveal the fact that data is written to a file which the term "Write" successfully conveys. Another poor name would be `StoreData (data)` - this does not reveal the formatting standard used to save the data and the term **Store** can also refer to variables not files.
+
+:::danger DON'T DO THIS
+**Do NOT obfuscate** function names as this renders them meaningless to the logic if you can't easily understand a functions purpose based on the name alone:
+
+- a (data)
+- HorseGoat (data)
+- abcdef (data)
+
+These functions are not usable since we don't know what their purpose is based on their names!
+:::
+
 ## Closed-Boxes
 
 There will be times when we need to use 3rd-party logic (known as **API's** : Application Programming Interface) or other prepared logic from **system library functions** where we **don't have access to the details of how they work**.
