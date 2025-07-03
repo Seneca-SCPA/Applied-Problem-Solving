@@ -154,9 +154,47 @@ Function: CreateList
 
 > No matter what, we want the user to **add at least one item to the shopping list** so we start with the logic that implements that. We don't ask the user for the option to add another item until **AFTER one has been added** and from there, the user can continue to add as many items as they wish (repeating from step #2).
 
-## Nested Iterations
+## Nested Iteration
 
-Do some examples
+Nested iterations follow the same concept as a nested selection from the previous topic - it is where an **iteration logic construct is placed within another construct**.
 
-- Flowchart
-- Pseudo Code
+The below example shows a main iteration for a game (outer/parent loop) and within a game, there is a loop of player moves (this is the **nested iteration**). The outcome of a "MakeMove" function call determines if the game is over. When the game is over, a new game can be started and the entire process repeats.
+
+### Flowchart
+
+![Image of nested iteration for playing a game](../static/img/iterationNested.png)
+
+### Pseudo Code
+
+Here is the pseudo code equivalent:
+
+```
+1. DECLARE
+      newGame = YES
+      gameOver
+
+2. Start a new game?
+      A. YES (newGame=YES):
+            1. ASSIGN: gameOver=FALSE
+            2. Game over?
+                  A. NO (gameOver=FALSE):
+                        1. ASSIGN: gameOver = CALL MakeMove()
+                        2. Repeat from step 2.A.2.
+
+            3. DISPLAY:
+                  "Start a new game?
+                  [BUTTON:YES]   [BUTTON:NO]"
+
+            4. ASSIGN: newGame = Selected BUTTON
+            5. Repeat from step 2.
+
+3. DISPLAY:
+      "Thanks for playing! Bye!"
+
+4. End
+```
+
+**Key Parts**:
+
+- Step `2.` is the main game loop (outer/parent)
+- Step `2.A.2.` is the **NESTED** player moves loop that occurs within a game until it's over
