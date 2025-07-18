@@ -75,6 +75,20 @@ Now let's consider a poorly named function that writes data to a JSON formatted 
 These functions are not usable since we don't know what their purpose is based on their names!
 :::
 
+## Function Documentation
+
+Functions should be **BRIEFLY** described to elaborate more on **WHAT** the purpose of the function is to expand on the name itself (the names alone are usually not enough). This would include **parameter(s)** (expected arguments) and **return value**.
+
+This is a very important aspect of programming especially when you get into collaborative coding and sharing of custom libraries like API's (Application Programming Interface). Functions need to be summarized so the use of the function is clear and other programmers will know how to properly apply the function.
+
+:::info NOTE
+For the purposes of these notes, **pseudo code functions** will be documented with a series of dashes: `------` before and after the description.
+
+See the below sub-section on [Returning Information](#returning-information) for some examples. Going forward, all examples will demonstrate function level documentation accordingly.
+
+**Flowchart functions** will almost always be the **main** function and generally will not require any documentation unless it is specific to an example requiring further detail.
+:::
+
 ## Closed-Boxes
 
 There will be times when we need to use 3rd-party logic (known as **API's** : Application Programming Interface) or other prepared logic from **system library functions** where we **don't have access to the details of how they work**.
@@ -151,22 +165,25 @@ Let's have a look at these methods and how they will be documented in pseudo cod
 Since these notes will be limiting the use of flowcharts to the `main` overview process only, we won't need to concern ourselves with documenting return values for flowcharting.
 :::
 
-<!--
-Explain how to return data from a function in two possible ways:
-
-1. Explicitly using "return"
-2. Implicitly using the argument variables
-
--->
-
 ### Explicit Return
 
 Returning information from a function **explicitly** is accomplished by using the keyword: **`return`**. This method provides a **single variable of information** to be returned from the function.
 
 For example, if we have a function: **`Multiply (number, multiple)`** which will return the results of multplying the provided `number` by the provided `multiple`, the logic would look like the following:
 
+Function: `Multiply (number, multiple)`
+
 ```
-Function: Multiply (number, multiple)
+----------------------------------------------------------------
+Description/Purpose:
+  Demonstration of a function that returns a value implicitly.
+
+Argument(s) : number (operand 1 to be multiplied)
+              multiple (operand 2 to be multiplied)
+Return Value: result of the multiplication
+----------------------------------------------------------------
+
+Multiply (number, multiple)
 
 1. DECLARE:
       result
@@ -181,7 +198,7 @@ Function: Multiply (number, multiple)
 This can be refined by not creating a variable:
 
 ```
-Function: Multiply (number, multiple)
+Multiply (number, multiple)
 
 1. RETURN number * multiple
 
@@ -192,10 +209,21 @@ Here is how the function can be used from a **flowchart**:
 
 ![Flowchart image showing the function returning a value and being assigned to a variable](../static/img/functionReturnExplicit.png)
 
-Here is how the function can be used from **pseudo code**:
+Here is how the function can be used from **pseudo code**.
+
+Function: `main()`
 
 ```
-Function: main
+----------------------------------------------------------------
+Description/Purpose:
+  Demonstration of calling a function "Multiply" that returns
+  a value explicitly.
+
+Argument(s) : NONE
+Return Value: NONE
+----------------------------------------------------------------
+
+main()
 
 1. DECLARE:
       coffeePrice = 2.99
@@ -215,7 +243,19 @@ Returning information implicitly involves updating a parameter variable. The und
 
 Let's do another version of the preceding example using this method (**notice the extra parameter `total`**).
 
+Function: `Multiply (number, multiple, total)`
+
 ```
+----------------------------------------------------------------
+Description/Purpose:
+  Demonstration of a function that returns a value implicitly.
+
+Argument(s) : number (operand 1 to be multiplied)
+              multiple (operand 2 to be multiplied)
+              total (result of multiplication)
+Return Value: NONE
+----------------------------------------------------------------
+
 Function: Multiply (number, multiple, total)
 
 1. ASSIGN: total = number * multiple
@@ -227,12 +267,23 @@ The `total` parameter variable was used as the return value from the function by
 
 Here is how the function can be used from a **flowchart**:
 
-![Flowchart image showing the function returning a value and being assigned to a variable](../static/img/functionReturnImplicit.png)
+![Flowchart image showing the function returning a value and being assigned to an argument variable](../static/img/functionReturnImplicit.png)
 
-Here is how the function can be used from **pseudo code**:
+Here is how the function can be used from **pseudo code**.
+
+Function: `main()`
 
 ```
-Function: main
+----------------------------------------------------------------
+Description/Purpose:
+  Demonstration of calling a function "Multiply" that returns
+  a value implicitly.
+
+Argument(s) : NONE
+Return Value: NONE
+----------------------------------------------------------------
+
+main()
 
 1. DECLARE:
       coffeePrice = 2.99
@@ -260,8 +311,21 @@ Some programming languages refer to implicit return values through parameters as
 
 A combination of explicit and implicit methods can be done too! Expanding on the preceding examples, we will add a tax component. The calculated tax amount will be returned implicitly via the tax parameter and the total (including tax) will be returned explicitly:
 
+Function: `Multiply (number, multiple, tax)`
+
 ```
-Function: Multiply (number, multiple, tax)
+----------------------------------------------------------------
+Description/Purpose:
+  Demonstration of a function that returns values applying both
+  the implicit and explicit methods.
+
+Argument(s) : number (operand 1 to be multiplied)
+              multiple (operand 2 to be multiplied)
+              tax (result of tax portion)
+Return Value: total including tax
+----------------------------------------------------------------
+
+Multiply (number, multiple, tax)
 
 1. DECLARE:
       result
@@ -281,8 +345,19 @@ Here is how the function can be used from a **flowchart**:
 
 Here is how the function can be used from **pseudo code**:
 
+Function: `main()`
+
 ```
-Function: main
+----------------------------------------------------------------
+Description/Purpose:
+  Demonstration of calling a function "Multiply" that returns
+  values applying both implicit and explicit methods.
+
+Argument(s) : NONE
+Return Value: NONE
+----------------------------------------------------------------
+
+main()
 
 1. DECLARE:
       coffeePrice = 2.99

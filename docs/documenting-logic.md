@@ -47,7 +47,7 @@ Flowcharts are actually standardized by the International Organization for Stand
 To stay within the scope of these notes, a very limited set of the most common symbols will be used:
 | Symbol-Image | Symbol-Shape | Description |
 | ------------ | ------------ | ----------- |
-| ![](../static/img/DocStart.png) | Squashed Oval | **Start** of the algorithm |
+| ![](../static/img/DocStart.png) | Squashed Oval | **Start** of the algorithm (with function name)|
 | ![](../static/img/DocEnd.png) | Squashed Oval | **End** of the algorithm |
 | ![](../static/img/DocSimpleProcess.png) | Rectangle | **Simple process** or action |
 | ![](../static/img/DocComplexProcess.png)| Striped Rectangle | **Complex function** <br /> (a pseudo code function or a closed-box process) |
@@ -86,7 +86,7 @@ As mentioned in the flowchart section, throughout the notes as programming logic
 This example has two functions defined that were referenced from the preceding flowchart example above.
 
 ```
-Function: GetAnimalCount(animalType)
+GetAnimalCount(animalType)
 
 1. DECLARE:
             count = 0
@@ -120,7 +120,7 @@ Function: GetAnimalCount(animalType)
 ```
 
 ```
-Function: EstimatedYardSize(totalAnimals, spacePerAnimal)
+EstimatedYardSize(totalAnimals, spacePerAnimal)
 
 1. DECLARE:
          feedTrough = 3

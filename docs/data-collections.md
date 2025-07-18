@@ -13,9 +13,11 @@ The simplest form of a data **container** is an array. The concept of an array i
 
 ## Example Scenario
 
-It is very common to have an application to manage information/data that supports many values which may or may not have a known limit to the number of pieces of data it needs to maintain. For example, if an application is required to manage student ID's, we would need the application to be able to adapt to the number of student ID data (which could also involve the adding and removing of students as part of the features of the application).
+It is very common for an application to manage information/data that supports many values which may or may not have a known limit to the number of pieces of data to maintain. For example, if an application is required to manage student ID's, we would need the application to be able to adapt to the number of student ID data (which could also involve the adding and removing of students as part of the features of the application).
 
-We certainly would not want to represent each student ID number as a separate variable (such as: `id1`, `id2`, `id3`, etc..) since we would not know how many variables to declare in advance and how would we be able to add more at runtime? Ideally, we need a way to simplify how we can represent data as a **list**. An important feature for this type of data representation would need to include the ability to adapt to changes in the number of list items (expanding or contracting in size). This is where the concept of a collection comes in!
+We certainly would not want to represent each student ID number as a separate variable (such as: `id1`, `id2`, `id3`, etc..) since we would not know how many variables to declare in advance and how would we be able to add more at runtime?
+
+Ideally, we need a way to simplify how we can represent data as a **list**. An important feature for this type of data representation would also include the ability to adapt to changes in the number of list items (expanding or contracting in size). This is where the concept of a collection comes in!
 
 :::tip ONE VARIABLE!
 Instead of declaring MANY variables for each student ID (and given the impossibility of how we could even manage varying number of students), we can use a **SINGLE collection variable** to represent many student ID's (as a list)!
@@ -33,14 +35,22 @@ This is the main function and logic flow.
 
 ## Pseudo Code
 
-Function: `AddAnotherStudent()`
+There are three functions to be detailed in this example.
 
-- Arguments: NONE
-- Returns:
-  - **TRUE** for "YES"
-  - **FALSE** for "NO"
+---
+
+**Function**: `AddAnotherStudent()`
 
 ```
+----------------------------------------------------------------
+Description/Purpose:
+Prompt the user to confirm if another student ID needs to be entered.
+
+Argument(s) : **NONE**
+Return Value: TRUE for "YES"
+              FALSE for "NO"
+----------------------------------------------------------------
+
 AddAnotherStudent()
 
 1. DECLARE:
@@ -61,12 +71,19 @@ AddAnotherStudent()
 5. End
 ```
 
+---
+
 Function: `AddStudent (studentIDs)`
 
-- Arguments: studentIDs (collection variable)
-- Returns: Nothing
-
 ```
+----------------------------------------------------------------
+Description/Purpose:
+Prompt the user to enter the new student ID and add it to the collection.
+
+Argument(s) : studentIDs (collection variable)
+Return Value: Nothing
+----------------------------------------------------------------
+
 AddStudent (studentIDs)
 
 1. DECLARE:
@@ -85,12 +102,20 @@ AddStudent (studentIDs)
 6. End
 ```
 
+---
+
 Function: `DisplayStudentData (studentIDs)`
 
-- Arguments: studentIDs (collection variable)
-- Returns: Nothing
-
 ```
+----------------------------------------------------------------
+Description/Purpose:
+Display each student ID in the studentIDs collection (iterate/loop).
+
+Argument(s) : studentIDs (collection variable)
+Return Value: Nothing
+
+----------------------------------------------------------------
+
 DisplayStudentData (studentIDs)
 
 1. DECLARE:

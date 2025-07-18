@@ -37,10 +37,20 @@ Here is how it would be done in a flowchart:
 
 ### Pseudo Code
 
-Here is the pseudo code equivalent:
+Here is the pseudo code equivalent.
+
+Function: `main()`
 
 ```
-Function: main
+----------------------------------------------------------------
+Description/Purpose:
+Demonstration of optional selection.
+
+Argument(s) : NONE
+Return Value: NONE
+----------------------------------------------------------------
+
+main()
 
 1. DECLARE
       yearlyMM = 325
@@ -89,10 +99,20 @@ Here is how it would be done in a flowchart:
 
 ### Pseudo Code
 
-And here is how it would be done in pseudo code:
+And here is how it would be done in pseudo code.
+
+Function: `main()`
 
 ```
-Function: main
+----------------------------------------------------------------
+Description/Purpose:
+Demonstration of alternative selection.
+
+Argument(s) : NONE
+Return Value: NONE
+----------------------------------------------------------------
+
+main()
 
 1. DECLARE
       yearlyMM = 325
@@ -135,10 +155,20 @@ Here is how it would be done in a flowchart:
 
 ### Pseudo Code
 
-And here is how it would be done in pseudo code:
+And here is how it would be done in pseudo code.
+
+Function: `main()`
 
 ```
-Function: main
+----------------------------------------------------------------
+Description/Purpose:
+Demonstration of multiple alternative selection.
+
+Argument(s) : NONE
+Return Value: NONE
+----------------------------------------------------------------
+
+main()
 
 1. DECLARE
       yearlyMM = 325
@@ -184,8 +214,18 @@ The golden highlighted section encompasses the **nested selection** which is onl
 
 ### Pseudo Code
 
+Function: `main()`
+
 ```
-Function: main
+----------------------------------------------------------------
+Description/Purpose:
+Demonstration of nested selection.
+
+Argument(s) : NONE
+Return Value: NONE
+----------------------------------------------------------------
+
+main()
 
 1. DECLARE
       yearlyMM = 325

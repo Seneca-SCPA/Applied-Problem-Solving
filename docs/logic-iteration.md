@@ -62,8 +62,19 @@ Let's continue with the shopping list theme from the introduction. We want to cr
 > - **Name and parameter**: **`AddItem (itemList)`**
 > - **itemList**: Parameter represents the entire shopping list and will implicitly add an item to that list
 
+Function: `CreateList()`
+
 ```
-Function: CreateList
+----------------------------------------------------------------
+Description/Purpose:
+  Demonstration of optional iteration where zero or more shopping
+  items can be added to the list.
+
+Argument(s) : NONE
+Return Value: NONE
+----------------------------------------------------------------
+
+CreateList()
 
 1. DECLARE:
       shoppingList
@@ -128,8 +139,19 @@ Let's modify the preceding OPTIONAL iteration flowchart example to be **MANDATOR
 
 Let's modify the preceding OPTIONAL iteration pseudo code example to be **MANDATORY iteration**. This change will **mandate the user to add at least one item to the shopping list** (unlike before where none was possible).
 
+Function: `CreateList()`
+
 ```
-Function: CreateList
+----------------------------------------------------------------
+Description/Purpose:
+  Demonstration of mandatory iteration to add at least one
+  shopping item to the list.
+
+Argument(s) : NONE
+Return Value: NONE
+----------------------------------------------------------------
+
+CreateList()
 
 1. DECLARE:
       shoppingList
@@ -166,9 +188,21 @@ The below example shows a main iteration for a game (outer/parent loop) and with
 
 ### Pseudo Code
 
-Here is the pseudo code equivalent:
+Here is the pseudo code equivalent.
+
+Function: `main()`
 
 ```
+----------------------------------------------------------------
+Description/Purpose:
+Demonstration of nested iteration.
+
+Argument(s) : NONE
+Return Value: NONE
+----------------------------------------------------------------
+
+main()
+
 1. DECLARE
       newGame = YES
       gameOver
