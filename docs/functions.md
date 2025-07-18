@@ -89,6 +89,27 @@ See the below sub-section on [Returning Information](#returning-information) for
 **Flowchart functions** will almost always be the **main** function and generally will not require any documentation unless it is specific to an example requiring further detail.
 :::
 
+Here is the template:
+
+```
+----------------------------------------------------------------
+Description/Purpose:
+   [Provide a brief description of the function's purpose]
+
+Argument(s) : [List each parameter/expected argument and if
+               needed, a brief associated description]
+              Example:
+              [param-1: describe briefly what this is for]
+              [param-2: describe briefly what this is for]
+
+Return Value: [Describe possible return values if applicable]
+----------------------------------------------------------------
+
+[FunctionName] ( [Parameter(s)] )
+
+1. [list of steps...]
+```
+
 ## Closed-Boxes
 
 There will be times when we need to use 3rd-party logic (known as **API's** : Application Programming Interface) or other prepared logic from **system library functions** where we **don't have access to the details of how they work**.

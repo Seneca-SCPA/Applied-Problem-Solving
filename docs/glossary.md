@@ -7,8 +7,14 @@ description: Glossary of key terms and definitions
 
 # Glossary of Key Terms
 
+**Collection**
+: Collections are composites of other objects that include data and have logical functionality to support the containers operations.
+
 **Construct**
 : A logical control such as a selection or iteration.
+
+**Container**
+: Containers are very data specific in the simplest forms such as an array and do not inherently have a lot of logical functionality.
 
 **Enumeration**
 : Sequencing steps with an identifier such as a number (ex: 1. 2. 3. ...) or letter (ex: A. B. C. ...).

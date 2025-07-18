@@ -103,8 +103,6 @@ Reducing a large problem into many smaller parts, **promotes a lot of flexibilit
 
 ## Data Representation
 
-<!-- IMAGE created with (https://worditout.com/word-cloud/create) (Colour Scheme: gray-scale, and custom aspect ratio: (10:2)) -->
-
 ![Word Cloud](../static/img/dataCloud.png)
 
 Information (data) is a major part of a computer-based solution since the data can significantly impact how the solution works and what it must do with the data. How data is received, used, or output is not the focus in this step, rather **the objective is to identify WHAT the relevant data is and to ensure it is represented in a way it can be used in the solution**.
@@ -123,7 +121,10 @@ When we refer to the variable `name`, it will represent a value corresponding to
 
 One question you may raise during this phase is about how much data you need to manage/represent and how granular (broken down into parts) you need to make it. In the preceding example, there is a `name` variable which includes the full name – does the solution require you to make a distinction between first and last name parts? If so, then you will need to represent this data separately where the `name` variable would need to be split into two variables such as `firstName` and `lastName` (or surname). Eliminating the original variable `name`. When you need to refer to the full name, you would simply join these two variables accordingly.
 
-There is an additional more advanced concept we can use to help manage more complex data representation, but this will be discussed [later](./data-structures.md).
+There is an additional more advanced concept we can use to help manage more complex data representation, but this will be discussed later in two other sections:
+
+- [data collections](./data-collections.md)
+- [data structures](./data-structures.md)
 
 ## Pattern Recognition
 
