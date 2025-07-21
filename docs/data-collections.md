@@ -11,6 +11,40 @@ description: Data Collections
 
 The simplest form of a data **container** is an array. The concept of an array is a variable capable of storing many values. All programming languages support this simplest form of a container, but many object-oriented languages such as C++, C#, Java, Python, etc., have additional variations mostly referred to as **collections** which provide an additional layer of operations (functions) to help simplify the navigation and management of the data. For the sake of these notes, and to maintain the language-agnostic theme, we will merge the concepts of these two major types of [data representation](./computational-thinking.md#data-representation) as one and refer to it as a **collection** for simplification and consistency.
 
+## Collection Functions
+
+To simplify how to use the functionality of a collection, this section will define a limited list of what features a collection provides so we can refer to this as needed in all future examples.
+
+### Navigation Actions
+
+| Action    | Explanation                                                                                                                                                          |
+| --------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **FIRST** | This returns the **first** item in the collection and updates the current position. <br/>If there are no items in the collection, it returns an **EMPTY** item.      |
+| **LAST**  | This returns the **last** item in the collection and updates the current position. <br/>If there are no items in the collection, it returns an **EMPTY** item.       |
+| **NEXT**  | This returns the **next** item in the collection and updates the current position. <br/>If no more items remain, it returns an **EMPTY** item.                       |
+| **PREV**  | This returns the **previous** item in the collection and updates the current position. <br/>If the current item is the first item, it will return an **EMPTY** item. |
+
+**NOTE**: The default current position is assumed to be at the beginning of the list.
+
+### Manipulation Actions
+
+| Action             | Explanation                                                                                                                                                          |
+| ------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **ADD**            | This will **add (append)** an item to the **end** of the collection <br />and updates the current position. <br />You must provide the new item data as an argument. |
+| **DELETE CURRENT** | This will **remove** the **current item** from the collection.                                                                                                       |
+
+:::tip NOTE
+To access these actions (functions), you will need to apply the dot `.` operator of the collection variable.
+:::
+
+## Collection Declaration
+
+Declaring a collection variable will require you to note it is a **collection type** and must **always initialize it to empty**. This is a good practice but also simplifies how we make the declaration. If we need to create a collection for storing many student ID's, we would declare as follows:
+
+> studentIDs = EMPTY COLLECTION
+
+This notation makes it clear the variable is called `studentIDs` and that it's a collection given it's being set to an **EMPTY COLLECTION**.
+
 ## Example Scenario
 
 It is very common for an application to manage information/data that supports many values which may or may not have a known limit to the number of pieces of data to maintain. For example, if an application is required to manage student ID's, we would need the application to be able to adapt to the number of student ID data (which could also involve the adding and removing of students as part of the features of the application).
@@ -31,7 +65,7 @@ Let's define the process for an application to manage the creation and adding of
 
 This is the main function and logic flow.
 
-![Image of the main flowchart calling the pseudo code detailed AddAnotherStudent and AddStudent functions as required](../static/img/collections.png)
+![Image of the main flowchart calling the pseudo code detailed AddAnotherStudent, AddStudent, and DisplayStudentData functions as required](../static/img/collections.png)
 
 ## Pseudo Code
 
@@ -94,7 +128,7 @@ AddStudent (studentIDs)
 
 3. ASSIGN: newStudentID = [User entered value]
 
-4. ADD newStudentID to studentIDs
+4. studentIDs.ADD(newStudentID)
 
 5. DISPLAY:
       "Student ID added!"
@@ -125,7 +159,7 @@ DisplayStudentData (studentIDs)
 2. DISPLAY:
       "Here are the stored student ID's:"
 
-3. ASSIGN: tmpID = next item from studentIDs
+3. ASSIGN: tmpID = studentIDs.NEXT
 
 4. Is tmpID empty?
       A) NO:
