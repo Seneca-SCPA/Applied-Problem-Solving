@@ -241,7 +241,7 @@ RemoveStudentData (students)
 
 4. Continue searching the collection? (keepLooking = TRUE)
       A) YES:
-            1. ASSIGN: tmpStudent = NEXT: item from students
+            1. ASSIGN: tmpStudent = students.NEXT
             2. Is tmpStudent empty?
                   A) NO:
                         1. Does the entered ID match this student? (tmpStudent.StudentID = tmpID)
