@@ -51,11 +51,11 @@ Let's continue with the shopping list theme from the introduction. We want to cr
 >
 > - **Name**: **`CreateList ()`**
 > - This function prompts the user to enter as many items as they wish to a shopping list.
-> - The function logic details will be described in the pseudo code section example.
+> - The function logic details will be described in the pseudocode section example.
 
 ![Image of a flowchart demonstrating iteration](../static/img/iterationOptional.png)
 
-### Pseudo Code
+### Pseudocode
 
 > **NOTE**: We will be using a [**closed-box function**](./functions.md#closed-boxes) that will deal with the details of obtaining item information and adding it to a list of items. Here's an overview of the function:
 >
@@ -135,9 +135,9 @@ Let's modify the preceding OPTIONAL iteration flowchart example to be **MANDATOR
 
 > Notice the user is forced to create at least one shopping list because the option of creating a shopping list was moved AFTER the logic that creates a list.
 
-### Pseudo Code
+### Pseudocode
 
-Let's modify the preceding OPTIONAL iteration pseudo code example to be **MANDATORY iteration**. This change will **mandate the user to add at least one item to the shopping list** (unlike before where none was possible).
+Let's modify the preceding OPTIONAL iteration pseudocode example to be **MANDATORY iteration**. This change will **mandate the user to add at least one item to the shopping list** (unlike before where none was possible).
 
 Function: `CreateList()`
 
@@ -186,9 +186,9 @@ The below example shows a main iteration for a game (outer/parent loop) and with
 
 ![Image of nested iteration for playing a game](../static/img/iterationNested.png)
 
-### Pseudo Code
+### Pseudocode
 
-Here is the pseudo code equivalent.
+Here is the pseudocode equivalent.
 
 Function: `main()`
 

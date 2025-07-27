@@ -14,7 +14,7 @@ The previous section on [computational thinking](./computational-thinking.md) fo
 There are many possible ways to document and communicate algorithms, however these notes will be focused on two very popular methods:
 
 1. Flowchart
-2. Pseudo Code
+2. Pseudocode
 
 :::info NOTE
 For the purposes of these notes, we'll be using flowcharts to communicate a simplified view of an algorithm and pseudo code for communicating the details of an algorithm.
@@ -50,7 +50,7 @@ To stay within the scope of these notes, a very limited set of the most common s
 | ![](../static/img/DocStart.png) | Squashed Oval | **Start** of the algorithm (with function name)|
 | ![](../static/img/DocEnd.png) | Squashed Oval | **End** of the algorithm |
 | ![](../static/img/DocSimpleProcess.png) | Rectangle | **Simple process** or action |
-| ![](../static/img/DocComplexProcess.png)| Striped Rectangle | **Complex function** <br /> (a pseudo code function or a closed-box process) |
+| ![](../static/img/DocComplexProcess.png)| Striped Rectangle | **Complex function** <br /> (a pseudocode function or a closed-box process) |
 | ![](../static/img/DocDecision.png)| Diamond | **Decision** (change in logical flow) |
 | ![](../static/img/DocTextLabel.png)| Text Label | **Text to describe decision output flow** <br />(placed on top of the line) |
 | ![](../static/img/DocLineArrows.png)| Lines with Arrows | **Flow direction** used to join symbols <br /> (indicates the next symbol to execute) |
@@ -61,13 +61,13 @@ Throughout the notes as programming logic is introduced, detailed examples apply
 
 ![](../static/img/DocFlowExample.png)
 
-## Pseudo Code
+## Pseudocode
 
-Pseudo code is a programmer's go-to choice for documenting algorithms. This is because of how flexible it is to modify and reorganize logic which is a very common activity when creating algorithms. Unlike flowcharts which is graphical, **pseudo code is textual and describes logic with concise clear human-language (English in this case)**. It is also easy to copy/paste the content directly into your code file to work from.
+Pseudocode is a programmer's go-to choice for documenting algorithms. This is because of how flexible it is to modify and reorganize logic which is a very common activity when creating algorithms. Unlike flowcharts which is graphical, **pseudocode is textual and describes logic with concise clear human-language (English in this case)**. It is also easy to copy/paste the content directly into your code file to work from.
 
-"Pseudo" meaning not genuine or false, indicates this type of describing logic is not genuine code (staying true to our rule of not programming in any specific language). Pseudo code can be more technical than flowcharts, but does not use any programming language specific syntax, but instead, **describes the logical intent at the level programmers can use to program the logic to any programming language desired**.
+"Pseudo" meaning not genuine or false, indicates this type of describing logic is not genuine code (staying true to our rule of not programming in any specific language). Pseudocode can be more technical than flowcharts, but does not use any programming language specific syntax, but instead, **describes the logical intent at the level programmers can use to program the logic to any programming language desired**.
 
-Pseudo code can be constructed in many different ways and generally we all have our own stylistic way of doing it but as mentioned in the overview, there will be some guidelines applied for the sake of consistency and clear communication. The guidelines described in these notes are minimal but effective general rules that are a good base to work from while you eventually establish your own style.
+Pseudocode can be constructed in many different ways and generally we all have our own stylistic way of doing it but as mentioned in the overview, there will be some guidelines applied for the sake of consistency and clear communication. The guidelines described in these notes are minimal but effective general rules that are a good base to work from while you eventually establish your own style.
 
 ### General Guidelines
 

@@ -82,7 +82,7 @@ Functions should be **BRIEFLY** described to elaborate more on **WHAT** the purp
 This is a very important aspect of programming especially when you get into collaborative coding and sharing of custom libraries like API's (Application Programming Interface). Functions need to be summarized so the use of the function is clear and other programmers will know how to properly apply the function.
 
 :::info NOTE
-For the purposes of these notes, **pseudo code functions** will be documented with a series of dashes: `------` before and after the description.
+For the purposes of these notes, **pseudocode functions** will be documented with a series of dashes: `------` before and after the description.
 
 See the below sub-section on [Returning Information](#returning-information) for some examples. Going forward, all examples will demonstrate function level documentation accordingly.
 
@@ -135,7 +135,7 @@ For the purposes of these notes, we'll be designating a **`flowchart` to always 
 Unlike high-level functions, lower-level functions are a lot more focused and detailed on a task that is highly limited in scope - most functions fit this category and are constructed to be reusable or to remove complexity from other larger scoped functions.
 
 :::caution note
-For the purposes of these notes, we'll be designating **`pseudo code` to always represent these lower-level detailed parts of the solution algorithm**.
+For the purposes of these notes, we'll be designating **`pseudocode` to always represent these lower-level detailed parts of the solution algorithm**.
 :::
 
 ## Passing Information
@@ -180,7 +180,7 @@ Functions often do more than just an explicit task - it is quite common for info
 2. Implicit
 3. Both explicit and implicit
 
-Let's have a look at these methods and how they will be documented in pseudo code.
+Let's have a look at these methods and how they will be documented in pseudocode.
 
 :::tip Reminder
 Since these notes will be limiting the use of flowcharts to the `main` overview process only, we won't need to concern ourselves with documenting return values for flowcharting.
@@ -230,7 +230,7 @@ Here is how the function can be used from a **flowchart**:
 
 ![Flowchart image showing the function returning a value and being assigned to a variable](../static/img/functionReturnExplicit.png)
 
-Here is how the function can be used from **pseudo code**.
+Here is how the function can be used from **pseudocode**.
 
 Function: `main()`
 
@@ -290,7 +290,7 @@ Here is how the function can be used from a **flowchart**:
 
 ![Flowchart image showing the function returning a value and being assigned to an argument variable](../static/img/functionReturnImplicit.png)
 
-Here is how the function can be used from **pseudo code**.
+Here is how the function can be used from **pseudocode**.
 
 Function: `main()`
 
@@ -364,7 +364,7 @@ Here is how the function can be used from a **flowchart**:
 
 ![Flowchart image showing the function returning a value and being assigned to a variable](../static/img/functionReturnImplicitExplicit.png)
 
-Here is how the function can be used from **pseudo code**:
+Here is how the function can be used from **pseudocode**:
 
 Function: `main()`
 

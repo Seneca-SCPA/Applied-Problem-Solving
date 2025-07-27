@@ -314,7 +314,7 @@ The scope of an algorithm can be small or vast depending on the problem it is ad
 
 Since algorithms detail a solution, they must be tested to ensure it in-fact provides a working solution to the entire problem and stays within the scope of the problem (see next sub-section on [Testing](./computational-thinking.md#testing)).
 
-To manage and communicate algorithms, programmers primarily use **pseudo code** as it is more efficient to work with and can provide more detail. However, **flowcharts** are used to provide a higher level view of the solution and is generally less detailed due to the complexity of the layout using graphical symbols. These forms of communicating logic will be covered in the next major section ([Documenting Logic](./documenting-logic.md)).
+To manage and communicate algorithms, programmers primarily use **pseudocode** as it is more efficient to work with and can provide more detail. However, **flowcharts** are used to provide a higher level view of the solution and is generally less detailed due to the complexity of the layout using graphical symbols. These forms of communicating logic will be covered in the next major section ([Documenting Logic](./documenting-logic.md)).
 
 ## Testing
 

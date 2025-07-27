@@ -35,9 +35,9 @@ Here is how it would be done in a flowchart:
 - Something "extra" only occurs if it is evaluated to TRUE (yes).
   :::
 
-### Pseudo Code
+### Pseudocode
 
-Here is the pseudo code equivalent.
+Here is the pseudocode equivalent.
 
 Function: `main()`
 
@@ -75,10 +75,10 @@ The program will **only (optionally)** update the record and display a message i
 :::caution NOTE
 
 - Notice the text 'label' `YES:` used to identify the answer to the selection question?
-- Notice the logic indentation (`TAB`) consistency of the pseudo code?
+- Notice the logic indentation (`TAB`) consistency of the pseudocode?
 - Notice how the enumeration changed from numbers (1...2...) to characters (a...b...) when the 'inner logic' is sequenced?
 
-It is important to maintain easy to read logic in pseudo code especially when **nested statements are involved**.
+It is important to maintain easy to read logic in pseudocode especially when **nested statements are involved**.
 
 The nested statements in this example is where the group of statements are placed under the `YES:` logic path.
 :::
@@ -97,9 +97,9 @@ Here is how it would be done in a flowchart:
 
 ![](../static/img/selectionAlternative.png)
 
-### Pseudo Code
+### Pseudocode
 
-And here is how it would be done in pseudo code.
+And here is how it would be done in pseudocode.
 
 Function: `main()`
 
@@ -153,9 +153,9 @@ Here is how it would be done in a flowchart:
 
 ![](../static/img/selectionAlternativeMulti.png)
 
-### Pseudo Code
+### Pseudocode
 
-And here is how it would be done in pseudo code.
+And here is how it would be done in pseudocode.
 
 Function: `main()`
 
@@ -212,7 +212,7 @@ Implementing this, would require logic to be placed within the section where it 
 
 The golden highlighted section encompasses the **nested selection** which is only executed if the parent selection that tests for a beaten record evaluates to TRUE.
 
-### Pseudo Code
+### Pseudocode
 
 Function: `main()`
 

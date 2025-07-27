@@ -59,15 +59,15 @@ Instead of declaring MANY variables for each student ID (and given the impossibi
 We can declare a **single collection variable**: `studentIDs` and by referring to this one variable, we can **access many student ID's**.
 :::
 
-Let's define the process for an application to manage the creation and adding of student ID's to a collection variable (where the user can enter as many ID's as desired) with the functionality to display the data stored in the collection after the data is input. We will use a flowchart to orchestrate the main flow and pseudo code to describe the detailed parts accordingly.
+Let's define the process for an application to manage the creation and adding of student ID's to a collection variable (where the user can enter as many ID's as desired) with the functionality to display the data stored in the collection after the data is input. We will use a flowchart to orchestrate the main flow and pseudocode to describe the detailed parts accordingly.
 
 ## Flowchart
 
 This is the main function and logic flow.
 
-![Image of the main flowchart calling the pseudo code detailed AddAnotherStudent, AddStudent, and DisplayStudentData functions as required](../static/img/collections.png)
+![Image of the main flowchart calling the pseudocode detailed AddAnotherStudent, AddStudent, and DisplayStudentData functions as required](../static/img/collections.png)
 
-## Pseudo Code
+## Pseudocode
 
 There are three functions to be detailed in this example.
 

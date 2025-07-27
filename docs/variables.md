@@ -11,7 +11,7 @@ description: Data Representation - Variables
 
 As introduced in the Computational Thinking: [Data Representation](./computational-thinking.md#data-representation) section, variables are named placeholders which can be referred to within the solution to access specific information by name to refer to a value.
 
-Variables are critical in providing our solutions the ability to not just store, but use information to help determine logical pathways ([selection](./logic-selection.md) which is covered later). Information can be simple and straight forward, but it can also be very complex. The more complex data representation will be covered much later in these notes, but in this section we'll concentrate on simple data representation and how variables are used in both flowchart and pseudo code methods of documentation.
+Variables are critical in providing our solutions the ability to not just store, but use information to help determine logical pathways ([selection](./logic-selection.md) which is covered later). Information can be simple and straight forward, but it can also be very complex. The more complex data representation will be covered much later in these notes, but in this section we'll concentrate on simple data representation and how variables are used in both flowchart and pseudocode methods of documentation.
 
 Many programming languages are "typed" in that you must indicate the type of information the variable must represent (example: whole number, fractional number, characters etc.), but not all languages require this extra level of detail. Sticking with the "language agnostic" theme, we will not be including type information when we declare and use variables.
 
@@ -38,7 +38,7 @@ DECLARE:
 
 We would instead shorten the words to abbreviations but not to the point where we still can't understand what they are:
 
-**Pseudo Code**
+**Pseudocode**
 
 ```
 1. DECLARE:
@@ -62,7 +62,7 @@ Sometimes we need to manage a lot of information which can lead to the use of ma
 
 Scenario: A solution needs to represent address information for a **customer** and a **distributor**. How would you breakdown this information into appropriate variables?
 
-**Pseudo Code**
+**Pseudocode**
 
 ```
 1. DECLARE:
@@ -81,7 +81,7 @@ These variables are **grouped** by **customer** then by **distributor** and sepa
 :::danger DON'T DO THIS
 What you don't want to do is declare every variable on a single line in random order! This is very confusing and benefits nobody:
 
-**Pseudo Code**
+**Pseudocode**
 
 ```
 1. DECLARE:

@@ -27,7 +27,7 @@ To define a new data structure, it starts with the new type name and followed by
 
 Here's how the Seneca Student type would be defined.
 
-**Pseudo Code**:
+**Pseudocode**:
 
 ```
 SenecaStudent
@@ -56,7 +56,7 @@ As mentioned back in the [variables](./variables.md) topic, data **type** inform
 
 Using the `SenecaStudent` structure example, this is how we can declare a variable of type **SenecaStudent**:
 
-**Pseudo Code**:
+**Pseudocode**:
 
 ```
 DECLARE:
@@ -75,7 +75,7 @@ Once you have a variable declared that is a structure type, you will need to pro
 
 Accessing the attributes for the variable `student` from our previous example (recall, `student` is of type **SenecaStudent**), here is how we would display the three attributes.
 
-**Pseudo Code**:
+**Pseudocode**:
 
 ```
 DISPLAY:
@@ -96,7 +96,7 @@ The dot (`.`) syntax is very common among most programming languages to access s
 
 Now that we have the ability to create structures to better contain related data - let's look at how you can have a collection of structures. In the above examples, we have a single student represented in a variable named "student". What if we want to manage many students? Just as we did in the introduction to [collections](./data-collections.md), we can specify a collection of a new type `SenecaStudent`.
 
-**Pseudo Code**:
+**Pseudocode**:
 
 ```
 DECLARE:
@@ -115,11 +115,11 @@ Here is an example of putting it all together where we will support **adding, re
 
 This is the main function and logic flow.
 
-![Image of the main flowchart calling the pseudo code detailed AddAnotherStudent, AddStudent, RemoveStudent, and DisplayStudentData functions as required](../static/img/structExampleMain.png)
+![Image of the main flowchart calling the pseudocode detailed AddAnotherStudent, AddStudent, RemoveStudent, and DisplayStudentData functions as required](../static/img/structExampleMain.png)
 
 ---
 
-### Pseudo Code
+### Pseudocode
 
 First we will define the `SenecaStudent` data structure and then the four detailed functions needed in this example.
 
