@@ -17,12 +17,13 @@ To simplify how to use the functionality of a collection, this section will defi
 
 ### Navigation Actions
 
-| Action    | Explanation                                                                                                                                                          |
-| --------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **FIRST** | This returns the **first** item in the collection and updates the current position. <br/>If there are no items in the collection, it returns an **EMPTY** item.      |
-| **LAST**  | This returns the **last** item in the collection and updates the current position. <br/>If there are no items in the collection, it returns an **EMPTY** item.       |
-| **NEXT**  | This returns the **next** item in the collection and updates the current position. <br/>If no more items remain, it returns an **EMPTY** item.                       |
-| **PREV**  | This returns the **previous** item in the collection and updates the current position. <br/>If the current item is the first item, it will return an **EMPTY** item. |
+| Action    | Explanation                                                                                                                                                                                                         |
+| --------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **FIRST** | This returns the **first** item in the collection and updates the current position. <br/>If there are no items in the collection, it returns an **EMPTY** item.                                                     |
+| **LAST**  | This returns the **last** item in the collection and updates the current position. <br/>If there are no items in the collection, it returns an **EMPTY** item.                                                      |
+| **NEXT**  | This returns the **next** item in the collection and updates the current position. <br/>If no more items remain, it returns an **EMPTY** item.                                                                      |
+| **PREV**  | This returns the **previous** item in the collection and updates the current position. <br/>If the current item is the first item, it will return an **EMPTY** item.                                                |
+| **AT**    | This returns the item **at the position stated** in the collection and updates the current position. <br/>This requires an **argument** for the position and if there is no item, it will return an **EMPTY** item. |
 
 **NOTE**: The default current position is assumed to be at the beginning of the list.
 
