@@ -17,23 +17,25 @@ To simplify how to use the functionality of a collection, this section will defi
 
 ### Navigation Actions
 
-| Action    | Explanation                                                                                                                                                                                                         |
-| --------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **FIRST** | This returns the **first** item in the collection and updates the current position. <br/>If there are no items in the collection, it returns an **EMPTY** item.                                                     |
-| **LAST**  | This returns the **last** item in the collection and updates the current position. <br/>If there are no items in the collection, it returns an **EMPTY** item.                                                      |
-| **NEXT**  | This returns the **next** item in the collection and updates the current position. <br/>If no more items remain, it returns an **EMPTY** item.                                                                      |
-| **PREV**  | This returns the **previous** item in the collection and updates the current position. <br/>If the current item is the first item, it will return an **EMPTY** item.                                                |
-| **AT**    | This returns the item **at the position stated** in the collection and updates the current position. <br/>This requires an **argument** for the position and if there is no item, it will return an **EMPTY** item. |
-| **COUNT** | This returns the number of items in the collection.                                                                                                                                                                 |
+| Action    | Explanation                                                                                                                                                                                                                      |
+| --------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **FIRST** | This returns the **first** item in the collection and updates the current position. <br/>If there are no items in the collection, it returns an **EMPTY** item.                                                                  |
+| **LAST**  | This returns the **last** item in the collection and updates the current position. <br/>If there are no items in the collection, it returns an **EMPTY** item.                                                                   |
+| **NEXT**  | This returns the **next** item in the collection and updates the current position. <br/>If no more items remain, it returns an **EMPTY** item.                                                                                   |
+| **PREV**  | This returns the **previous** item in the collection and updates the current position. <br/>If the current item is the first item, it will return an **EMPTY** item.                                                             |
+| **AT**    | This returns the item **at the position stated** (zero-based) in the collection and updates the current position. <br/>This requires an **argument** for the position and if there is no item, it will return an **EMPTY** item. |
+| **COUNT** | This returns the number of items in the collection.                                                                                                                                                                              |
 
 **NOTE**: The default current position is assumed to be at the beginning of the list.
 
 ### Manipulation Actions
 
-| Action             | Explanation                                                                                                                                                          |
-| ------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **ADD**            | This will **add (append)** an item to the **end** of the collection <br />and updates the current position. <br />You must provide the new item data as an argument. |
-| **DELETE CURRENT** | This will **remove** the **current item** from the collection.                                                                                                       |
+| Action         | Explanation                                                                                                                                                                                                   |
+| -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **ADD**        | This will **add (append)** an item to the **end** of the collection <br />and updates the current position. <br />You must provide the new item data as an argument.                                          |
+| **DELETE**     | This will **remove** the **current item** from the collection.                                                                                                                                                |
+| **REPLACE_AT** | This will **replace** an item in the collection at the specified **position** (zero-based) <br />and updates the current position. <br />You must provide the new item data as an argument, and the position. |
+| **DELETE_AT**  | This will **remove** an item at the **position** (zero-based) specified <br />and updates the current position. <br />You must provide the position as an argument.                                           |
 
 :::tip NOTE
 To access these actions (functions), you will need to apply the dot `.` operator of the collection variable.
