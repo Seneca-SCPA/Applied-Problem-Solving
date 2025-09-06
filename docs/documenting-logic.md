@@ -75,7 +75,7 @@ Pseudocode can be constructed in many different ways and generally we all have o
 | ------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Enumeration        | Each step or instruction should have a corresponding sequence number or letter. When nested logic is applied, enumeration resets using the opposite number or letter sequence.                                                                         |
 | Indentation        | The term nesting will be explained later, but it is crucial to consistently indent (or `TAB`) each level of logic that is nested.                                                                                                                      |
-| Alignment          | Overall horizontal left-alignment is critical to keeping statements organized and easily identifiable as to which each statement is related to or apart of other parts of logic (especially when nesting).                                             |
+| Alignment          | Overall horizontal left-alignment is critical to keeping statements organized and easily identifiable and how each statement is related to or apart of other parts of logic (especially when nesting).                                                 |
 | Flow-through Logic | Logic should flow naturally to the next step. You should not have instructions that state "continue to the next step" as this is the natural sequence when one statement ends, it automatically assumes to continue to the next statement in sequence. |
 | Jump Statements    | Logic flow needs to be carefully managed and NEVER apply "jump statements" which direct logic to jump ahead skipping many steps. Example: if step #5 instructs "GO TO step #99" this is extremely poor design and not acceptable!                      |
 
@@ -86,6 +86,16 @@ As mentioned in the flowchart section, throughout the notes as programming logic
 This example has two functions defined that were referenced from the preceding flowchart example above.
 
 ```
+----------------------------------------------------------------
+Description/Purpose:
+   Prompts the user to increment a counter for the animalType
+   specified by given argument and returns the count value
+
+Argument(s) : animalType (a string representing the animal type)
+
+Return Value: count (# of animals counted: whole number)
+----------------------------------------------------------------
+
 GetAnimalCount(animalType)
 
 1. DECLARE:
@@ -100,8 +110,8 @@ GetAnimalCount(animalType)
 
 3. Which button was tapped?
     A. ADD  :
-            1. Add 1 to count
-            2. Repeat from step:2
+            1. ASSIGN: count = count + 1 <---- Note: Add 1 to the count
+            2. REPEAT: from step 2
 
     B. DONE :
             1. DISPLAY:
@@ -110,16 +120,27 @@ GetAnimalCount(animalType)
                        BUTTON: [NO]"
             2. Which button was tapped?
                   A. NO:
-                        1. Repeat from step:2
+                        1. REPEAT: from step 2
 
-    C. NONE :
-            1. Repeat from step:2
-
-4. Return count
+4. RETURN: count
 5. END
 ```
 
 ```
+----------------------------------------------------------------
+Description/Purpose:
+   Calculates the estimated yard size required based on the
+   received number of animals and average space used by a single
+   animal. The resulting calculated area is returned. This also
+   factors optional water trough and feeding trough options.
+
+Argument(s) : totalAnimals (whole number)
+              spacePerAnimal (average area required for a
+                              single animal)
+
+Return Value: area (calculated total area needed for all animals)
+----------------------------------------------------------------
+
 EstimatedYardSize(totalAnimals, spacePerAnimal)
 
 1. DECLARE:
