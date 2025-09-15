@@ -352,8 +352,8 @@ Multiply (number, multiple, tax)
       result
       taxPercent = 0.13
 
-2. ASSIGN: tax  = number * multiple
-3. ASSIGN: result = number * multiple + tax
+2. ASSIGN: tax  = number * multiple * taxPercent
+3. ASSIGN: result = (number * multiple) + tax
 
 4. RETURN <result>
 
