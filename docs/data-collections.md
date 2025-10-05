@@ -170,7 +170,7 @@ DisplayStudentData (studentIDs)
             1. DISPLAY:
                   "[tmpID]" (newline)
             2. ASSIGN: itemCount + 1
-            3. Repeat from step #3
+            3. REPEAT: from Step #3
 
 5. DISPLAY:
       "There are [itemCount] Student ID's stored."

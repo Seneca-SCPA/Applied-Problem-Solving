@@ -88,7 +88,7 @@ CreateList()
       A. YES:
             1. CALL: AddItem (shoppingList)
             2. ASSIGN: Add 1 to itemCount
-            3. Repeat from step #2.
+            3. REPEAT: from Step #2
 
 4. Does the shopping list have items?
       A. YES (itemCount > 0):
@@ -166,7 +166,7 @@ CreateList()
 
 5. Keep adding items to the shopping list - which button was selected?
       A. YES:
-            1. Repeat from step #2.
+            1. REPEAT: from Step #2
 
 6. DISPLAY:
       "Shopping list ready! There are <itemCount> items."
@@ -213,14 +213,14 @@ main()
             2. Game over?
                   A. NO (gameOver=FALSE):
                         1. ASSIGN: gameOver = CALL MakeMove()
-                        2. Repeat from step 2.A.2.
+                        2. REPEAT: from Step #2.A.2
 
             3. DISPLAY:
                   "Start a new game?
                   [BUTTON:YES]   [BUTTON:NO]"
 
             4. ASSIGN: newGame = Selected BUTTON
-            5. Repeat from step 2.
+            5. REPEAT: from Step #2
 
 3. DISPLAY:
       "Thanks for playing! Bye!"

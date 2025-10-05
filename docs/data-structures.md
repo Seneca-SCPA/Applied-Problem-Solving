@@ -252,7 +252,7 @@ RemoveStudentData (students)
                   B) YES:
                         1. ASSIGN: keepLooking = FALSE
 
-            3. Repeat from step #4
+            3. REPEAT: from Step #4
 
 5. Was a match found (and student data deleted)? (matchFound = TRUE)
       A) YES:
@@ -283,7 +283,6 @@ DisplayStudentData (students)
 
 1. DECLARE:
       tmpStudent
-      itemCount = 0
 
 2. DISPLAY:
       "Here are the stored students:"
@@ -296,11 +295,10 @@ DisplayStudentData (students)
                  "Student ID: [tmpStudent.studentID]
                   Program   : [tmpStudent.programCode]
                   Graduated?: [tmpStudent.isGraduated]" (newline)
-            2. ASSIGN: itemCount + 1
-            3. Repeat from step #3
+            2. REPEAT: from Step #3
 
 5. DISPLAY:
-      "There are [itemCount] Student's stored."
+      "There are [students.COUNT] Student's stored."
 
 6. End
 ```
