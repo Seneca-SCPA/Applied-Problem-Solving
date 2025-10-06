@@ -158,7 +158,6 @@ DisplayStudentData (studentIDs)
 
 1. DECLARE:
       tmpID
-      itemCount = 0
 
 2. DISPLAY:
       "Here are the stored student ID's:"
@@ -169,11 +168,10 @@ DisplayStudentData (studentIDs)
       A) NO:
             1. DISPLAY:
                   "[tmpID]" (newline)
-            2. ASSIGN: itemCount + 1
-            3. REPEAT: from Step #3
+            2. REPEAT: from Step #3
 
 5. DISPLAY:
-      "There are [itemCount] Student ID's stored."
+      "There are [studentIDs.COUNT] Student ID's stored."
 
 6. End
 ```
