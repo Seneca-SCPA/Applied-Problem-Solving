@@ -86,10 +86,72 @@ DISPLAY:
 
 **Flowchart**:
 
-![Image showing how to declare a variable of structure type for SenecaStudent in a flowchart](../static/img/structAccess.png)
+![Image showing how to access the data of structure variable for SenecaStudent in a flowchart](../static/img/structAccess.png)
 
 :::tip FYI
 The dot (`.`) syntax is very common among most programming languages to access sub-components of an object.
+:::
+
+## Structure COMPOSITION
+
+Often, we need to include other defined structured data within another structure as there may be a loosely associated relationship involved. Let's revisit the previous example to demonstrate what this means.
+
+Every student will have name information associated to their student ID. Names can be be simple, but they can also have more structure to them such as:
+
+- First name
+- Last name
+- Middle name
+- Nickname (short version of the name)
+- Prefix (ie: Mx., Mr., Mrs., Ms., Master, etc.)
+
+We can update our student example now to include this data representation:
+
+**Pseudocode**:
+
+```
+NameInfo
+- firstName
+- lastMame
+- nickname (short version of the name)
+```
+
+Then add this to our SenecaStudent data structure as a member:
+
+```
+SenecaStudent
+- studentID
+- name (type: NameInfo)
+- programCode
+- isGraduated
+```
+
+:::tip NOTE
+Notice the additional attribute after `studentID`? We explicitly identify the `name` attribute as being of a special **NameInfo** type.
+:::
+
+**Flowchart**:
+
+![Image showing how to define another structure for representing the name data and included in the SenecaStudent structure in a flowchart](../static/img/structDefineComp.png)
+
+Accessing the details of the name follows the same convention as before, only now we will need to "drill" down into the data using the `.` dot notation when we get to that attribute. Here's how we would display the first and last name of a student with this new change:
+
+**Pseudocode**:
+
+```
+DISPLAY:
+      "Student ID: [student.studentID]
+       Last Name : [student.name.lastName]
+       First Name: [student.name.firstName]
+       Program   : [student.programCode]
+       Graduated?: [student.isGraduated]"
+```
+
+**Flowchart**:
+
+![Image showing how to access the data of structure variable for SenecaStudent in a flowchart](../static/img/structAccessComp.png)
+
+:::tip NOTE
+Notice the extra level of using the dot (`.`) to access the attributes of the `name`? Since `name` is a structure, we need to access its attributes using the `.` notation.
 :::
 
 ## Collection of Structures
@@ -127,8 +189,14 @@ First we will define the `SenecaStudent` data structure and then the four detail
 ----------------------------------------------------------------
 Data Structures:
 
+NameInfo
+- firstName
+- lastMame
+- nickname (short version of the name)
+
 SenecaStudent
 - studentID
+- name (type: NameInfo)
 - programCode
 - isGraduated
 
@@ -194,21 +262,31 @@ AddStudent (students)
 3. ASSIGN: newStudent.studentID = [User entered value]
 
 4. DISPLAY:
-      "Enter the program code:"
+      "Enter the first name:"
 
-5. ASSIGN: newStudent.programCode = [User entered value]
+5. ASSIGN: newStudent.name.firstName = [User entered value]
 
 6. DISPLAY:
+      "Enter the last name:"
+
+7. ASSIGN: newStudent.name.lastName = [User entered value]
+
+8. DISPLAY:
+      "Enter the program code:"
+
+9. ASSIGN: newStudent.programCode = [User entered value]
+
+10. DISPLAY:
       "Has the student graduated (YES|NO)?:"
 
-7. ASSIGN: newStudent.isGraduated = [User entered value]
+11. ASSIGN: newStudent.isGraduated = [User entered value]
 
-8. ADD the new student to the collection: students.ADD(newStudent)
+12. ADD the new student to the collection: students.ADD(newStudent)
 
-9. DISPLAY:
+13. DISPLAY:
       "Student added!"
 
-10. End
+14. End
 ```
 
 ---
@@ -292,9 +370,11 @@ DisplayStudentData (students)
 4. Is tmpStudent empty?
       A) NO:
             1. DISPLAY:
-                 "Student ID: [tmpStudent.studentID]
-                  Program   : [tmpStudent.programCode]
-                  Graduated?: [tmpStudent.isGraduated]" (newline)
+                  "Student ID: [student.studentID]
+                  Last Name : [student.name.lastName]
+                  First Name: [student.name.firstName]
+                  Program   : [student.programCode]
+                  Graduated?: [student.isGraduated]" (newline)
             2. REPEAT: from Step #3
 
 5. DISPLAY:
