@@ -111,7 +111,7 @@ We can update our student example now to include this data representation:
 ```
 NameInfo
 - firstName
-- lastMame
+- lastName
 - nickname (short version of the name)
 ```
 
@@ -191,7 +191,7 @@ Data Structures:
 
 NameInfo
 - firstName
-- lastMame
+- lastName
 - nickname (short version of the name)
 
 SenecaStudent
