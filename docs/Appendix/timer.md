@@ -35,7 +35,7 @@ Many programming languages have libraries to help simplify how time is tracked a
 	A. NO (seconds < timeToWait):
 			1. ASSIGN: seconds = seconds + 1
 			2. CALL: wait(1)    <=== this will pause the application for 1 second
-			2. REPEAT: from step #3
+			3. REPEAT: from step #3
 
 4. DISPLAY:
 		"[timeToWait] seconds is up!"
