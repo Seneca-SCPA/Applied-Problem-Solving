@@ -390,7 +390,7 @@ main()
 3. DISPLAY:
       "The cost of a coffee is:     $<coffeePrice>
        The tax for 5 coffee's is:   $<tax>
-       The total for 5 coffee's is: %<total>"
+       The total for 5 coffee's is: $<total>"
 
 4. End
 ```
