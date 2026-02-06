@@ -191,7 +191,7 @@ The below example shows a main iteration for a game (outer/parent loop) and with
 
 ### Flowchart
 
-<img src="../static/img/iterationNested.png" alt="Image of nested iteration for playing a game" width="350">
+<img src="../static/img/iterationNested.png" alt="Image of nested iteration for playing a game" width="350" />
 
 ### Pseudocode
 
