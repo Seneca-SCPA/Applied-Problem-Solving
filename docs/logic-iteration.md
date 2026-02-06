@@ -53,7 +53,7 @@ Let's continue with the shopping list theme from the introduction. We want to cr
 > - This function prompts the user to enter as many items as they wish to a shopping list.
 > - The function logic details will be described in the pseudocode section example.
 
-![Image of a flowchart demonstrating iteration](../static/img/iterationOptional.png)
+<img src="../static/img/iterationOptional.png" alt="Image of a flowchart demonstrating iteration" width=350 />
 
 ### Pseudocode
 
@@ -79,18 +79,21 @@ CreateList()
 1. DECLARE:
       shoppingList
       itemCount = 0
+      addItem
 
 2. DISPLAY:
       "Do you want to add an item to the shopping list?
           [BUTTON: YES]     [BUTTON: NO]"
 
-3. Keep adding items to the shopping list - which button was selected?
-      A. YES:
+3. ASSIGN: addItem = <user selected button>
+
+4. Keep adding items to the shopping list - which button was selected?
+      A. YES (addItem=YES):
             1. CALL: AddItem (shoppingList)
             2. ASSIGN: Add 1 to itemCount
             3. REPEAT: from Step #2
 
-4. Does the shopping list have items?
+5. Does the shopping list have items?
       A. YES (itemCount > 0):
             1. DISPLAY:
                   "Shopping list ready! There are <itemCount> items."
@@ -98,7 +101,7 @@ CreateList()
             1. DISPLAY:
                   "Shopping list is empty! Don't go shopping!"
 
-5. End
+6. End
 ```
 
 - The repeating construct begins in **step #3**. This iteration may never be executed because it is dependent on the preceding answer to the question of adding an item to the shopping list. If the user selects the NO button the first time, then no items will be added to the list however, as long as the user selects the YES button it will continue iterating adding more items to the shopping list. As soon as the user selects the NO button, the iteration will stop.
@@ -131,7 +134,7 @@ Mandatory iteration found in most programming languages include:
 
 Let's modify the preceding OPTIONAL iteration flowchart example to be **MANDATORY iteration**. This change will **mandate the user to enter at least one shopping list** (unlike before where none was possible).
 
-![Image of a flowchart demonstrating iteration](../static/img/iterationMandatory.png)
+<img src="../static/img/iterationMandatory.png" alt="Image of a flowchart demonstrating iteration" width=350 />
 
 > Notice the user is forced to create at least one shopping list because the option of creating a shopping list was moved AFTER the logic that creates a list.
 
@@ -156,22 +159,26 @@ CreateList()
 1. DECLARE:
       shoppingList
       itemCount = 0
+      addItem
 
 2. CALL: AddItem (shoppingList)
+
 3. ASSIGN: Add 1 to itemCount
 
 4. DISPLAY:
       "Do you want to add another item to the shopping list?
           [BUTTON: YES]     [BUTTON: NO]"
 
-5. Keep adding items to the shopping list - which button was selected?
-      A. YES:
+5. ASSIGN: addItem = <user selected button>
+
+6. Keep adding items to the shopping list?
+      A. YES (addItem=YES):
             1. REPEAT: from Step #2
 
-6. DISPLAY:
+7. DISPLAY:
       "Shopping list ready! There are <itemCount> items."
 
-7. End
+8. End
 ```
 
 > No matter what, we want the user to **add at least one item to the shopping list** so we start with the logic that implements that. We don't ask the user for the option to add another item until **AFTER one has been added** and from there, the user can continue to add as many items as they wish (repeating from step #2).
@@ -184,7 +191,7 @@ The below example shows a main iteration for a game (outer/parent loop) and with
 
 ### Flowchart
 
-![Image of nested iteration for playing a game](../static/img/iterationNested.png)
+<img src="../static/img/iterationNested.png" alt="Image of nested iteration for playing a game" width="350">
 
 ### Pseudocode
 
@@ -219,7 +226,7 @@ main()
                   "Start a new game?
                   [BUTTON:YES]   [BUTTON:NO]"
 
-            4. ASSIGN: newGame = Selected BUTTON
+            4. ASSIGN: newGame = <user selected button>
             5. REPEAT: from Step #2
 
 3. DISPLAY:
