@@ -53,7 +53,7 @@ Let's continue with the shopping list theme from the introduction. We want to cr
 > - This function prompts the user to enter as many items as they wish to a shopping list.
 > - The function logic details will be described in the pseudocode section example.
 
-<img src="../static/img/iterationOptional.png" alt="Image of a flowchart demonstrating iteration" width="350" />
+![Image of a flowchart demonstrating iteration](../static/img/iterationOptional.png)
 
 ### Pseudocode
 
@@ -134,7 +134,7 @@ Mandatory iteration found in most programming languages include:
 
 Let's modify the preceding OPTIONAL iteration flowchart example to be **MANDATORY iteration**. This change will **mandate the user to enter at least one shopping list** (unlike before where none was possible).
 
-<img src="../static/img/iterationMandatory.png" alt="Image of a flowchart demonstrating iteration" width="350" />
+![Image of a flowchart demonstrating iteration](../static/img/iterationMandatory.png)
 
 > Notice the user is forced to create at least one shopping list because the option of creating a shopping list was moved AFTER the logic that creates a list.
 
@@ -191,7 +191,7 @@ The below example shows a main iteration for a game (outer/parent loop) and with
 
 ### Flowchart
 
-<img src="../static/img/iterationNested.png" alt="Image of nested iteration for playing a game" width="350" />
+![Image of nested iteration for playing a game](../static/img/iterationNested.png)
 
 ### Pseudocode
 
